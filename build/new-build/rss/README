@@ -1,0 +1,10 @@
+
+Contains retrieved RSS feeds for use by the page building script.
+
+All the *.feed files contain the URL of a feed as their first line,
+followed by the XML document containing a feed.  
+
+read-feeds.py goes through all the feeds and updates the content.
+We'll run this from cron.
+
+

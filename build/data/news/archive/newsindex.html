@@ -1,0 +1,9 @@
+<n:invisible n:data="news">
+<div id="newsindex" class="news-section" n:render="sequence" n:data="20:">
+<n:invisible n:pattern="item" n:render="mapping">
+<h2 class="news"><n:slot name="title" /></h2>
+<n:slot name="description" />
+<div class="pubdate">Published: <n:slot name="pubDate" /></div>
+</n:invisible>
+</div>
+</n:invisible>

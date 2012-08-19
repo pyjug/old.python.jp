@@ -1,0 +1,30 @@
+
+<%inherit file="pydotorg.tmpl"/>
+
+<%def name="content()">
+        ${parent.content()}
+
+	<table cellspacing="0" id="sigindex">
+	<thead>
+	<tr>
+	    <th>Name</th>
+	    <th>Coordinator</th>
+	    <th>Description</th>
+	    <th>Info</th>
+	</tr>
+	</thead>
+
+	<% sig_items = read_retired_sigs() %>
+	%for sig in sig_items:
+          <tr>
+	    <td class="signame"><a href="/community/sigs/retired/${sig['id']}">${sig['id']}</a></a></td>
+	    <td class="coordinator">${sig['name']}</td>
+	    <td class="description">${sig['description']}</td>
+	    <td class="archivesubscribe">
+	      <a href="http://mail.python.org/pipermail/${sig['id']}">archive</a>
+	    </td>
+	    <td class="retired">${sig['retired']}</td>
+	  </tr>
+	%endfor
+        </table>
+</%def>

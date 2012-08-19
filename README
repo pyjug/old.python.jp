@@ -1,0 +1,3 @@
+This is the python.org website.  Content is located in the 'build/data'
+directory.  To build, use the Makefile or equivalent commands in the
+'build' directory.  For details, see build/README.

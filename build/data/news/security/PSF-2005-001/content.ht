@@ -1,0 +1,81 @@
+Title: PSF-2005-001 - SimpleXMLRPCServer.py allows unrestricted traversal
+
+<h2>PSF-2005-001 - SimpleXMLRPCServer.py allows unrestricted traversal</h2>
+
+<hr>
+
+<h3>Python Security Advisory</h3>
+
+<pre><b>
+Advisory ID:  <a href="/files/news/security/PSF-2005-001/PSF-2005-001.txt">PSF-2005-001</a>
+Issue Date:   February 3, 2005
+Product:      Python
+Versions:     2.2 all versions, 2.3 prior to 2.3.5, 2.4
+CVE Names:    CAN-2005-0089
+</b></pre>
+
+<hr>
+
+<p>Python is an interpreted, interactive, object-oriented programming
+language. It is often compared to Tcl, Perl, Scheme or Java.</p>
+
+<p>The Python development team has discovered a flaw in the
+SimpleXMLRPCServer library module which can give remote attackers
+access to internals of the registered object or its module or possibly
+other modules.  The flaw only affects Python XML-RPC servers that use
+the register_instance() method to register an object without a
+_dispatch() method.  Servers using only register_function() are not
+affected.</p>
+
+<p>On vulnerable XML-RPC servers, a remote attacker may be able to
+view or modify globals of the module(s) containing the registered
+instance's class(es), potentially leading to data loss or arbitrary
+code execution.  If the registered object is a module, the danger is
+particularly serious.  For example, if the registered module imports
+the os module, an attacker could invoke the os.system() function.</p>
+
+<p>But the attack is not limited to registered object modules; for
+example, the code in the Python cookbook recipe at <a
+href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/165375"
+>http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/165375</a> is
+vulnerable to an attack using im_func.func_globals.update which allows
+reading or modifying the global variable accessList.
+
+<p>The Common Vulnerabilities and Exposures project (<a
+href="http://cve.mitre.org">cve.mitre.org</a>) has assigned the name
+CAN-2005-0089 to this issue.</.>
+
+<p>Python 2.3.5 will be released from <a href="http://www.python.org"
+>www.python.org</a> within a few days containing a fix for this issue.
+Python 2.4.1 will be released later this month containing the same
+fix.  Patches for Python 2.2, 2.3 and
+2.4 are also immediately available:</p>
+
+<ul>
+
+<li> <a href="/files/news/security/PSF-2005-001/patch-2.2.txt"
+>http://python.org/files/news/security/PSF-2005-001/patch-2.2.txt</a> (Python
+2.2)
+
+<li> <a href="/files/news/security/PSF-2005-001/patch.txt"
+>http://python.org/files/news/security/PSF-2005-001/patch.txt</a> (Python 2.3,
+2.4)
+
+</ul>
+
+<p>Note that these patches disable recursive traversal, potentially
+resulting in reduced functionality of XML-RPC applications depending
+on this feature.</p>
+
+<p><b>Acknowledgement:</b> thanks to Graham Dumpleton for reporting
+this issue.</p>
+
+<hr>
+
+<h3>Postscripts</h3>
+
+<p>The fix for this problem has been incorporated into <a
+href="/download/releases/2.3.5/"
+>Python 2.3.5</a>, which was released on Feb 8th, 2005, and 
+into <a href="/download/releases/2.4.1/">Python 2.4.1</a>, which was released 
+March 30th, 2005.

@@ -1,0 +1,29 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+
+  <ShortName>Python Modules in Stdlib</ShortName>
+  <Description>Search for a Module in the Standard Library</Description>
+  <Tags>Python</Tags>
+
+  <Image height="16" width="16" type="image/x-icon">http://www.python.org/images/favicon16x16.ico</Image>
+
+  <Developer>Python Advocacy Coordinator</Developer>
+  <Attribution>Python Software Foundation</Attribution>
+  <AdultContent>false</AdultContent>
+  <Language>en-us</Language>
+
+  <InputEncoding>UTF-8</InputEncoding>
+  <Query role="example" searchTerms="StringIO" />
+
+  <Url
+    type="text/html"
+    method="GET"
+    template="http://www.google.com/search?q=site%3Adocs.python.org+inurl%3Adocs.python.org/*/module-+-inurl%3Adocs.python.org/webstats/+{searchTerms?}"
+    />
+
+  <Url type="application/x-suggestions+json" method="GET"
+    template="http://suggestqueries.google.com/complete/search?output=firefox&amp;client=firefox&amp;sitesearch=docs.python.org&amp;as_sitesearch=docs.python.org&amp;qu={searchTerms}"/>
+
+  <moz:SearchForm>http://www.google.com/search?q=site%3Adocs.python.org+{searchTerms?}</moz:SearchForm>
+
+</OpenSearchDescription>

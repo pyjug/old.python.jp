@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+  <channel>
+    <title>Python News</title>
+    <link>http://www.python.org/</link>
+    <description>Python-related news and announcements.
+      Python is an interpreted, interactive, object-oriented
+      programming language. </description>
+
+    <image>
+      <title>Python logo</title>
+      <url>http://www.python.org/images/python-logo.gif</url>
+      <link>http://www.python.org/</link>
+    </image>
+ 
+    <% news_items = read_news() %>
+    %for item in news_items[:25]:
+      <item>
+	<guid>http://www.python.jp/news/index.html#${anchorify(item['pubDate'])}</guid>
+	<title>${item['title']|h}</title>
+	<description><![CDATA[${item['description']}]]></description>
+	<pubDate>${item['pubDate']}</pubDate>
+      </item>
+    %endfor
+
+  </channel>
+</rss>

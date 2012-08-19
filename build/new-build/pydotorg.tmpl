@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%doc>
+  Input variables:
+    title
+    keywords
+    description
+    javascript -- list of JS URLs
+    breadcrumbs -- breadcrumb data (still unspecified)
+    text -- content of the page
+
+  Navigation input variables:
+    nav -- navigation tree
+      [(level 1 url, level 1 title, level 1 selected,
+        [(level 2 url, level 2 title), ...]),
+       ...]
+    quicklinks -- navigation tree
+
+</%doc>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+${self.head()}
+
+<body>
+  <!-- Logo -->
+  <h1 id="logoheader">
+    <a href="/" id="logolink" accesskey="1"><img id="logo" src="/images/python-logo.gif" alt="homepage" border="0" /></a>
+  </h1>
+  <!-- Skip to Navigation -->
+  <div class="skiptonav"><a href="#left-hand-navigation" accesskey="2"><img src="/images/trans.gif" id="skiptonav" alt="skip to navigation" border="0" /></a></div>
+  <div class="skiptonav"><a href="#content-body" accesskey="3"><img src="/images/trans.gif" id="skiptocontent" alt="skip to content" border="0" /></a></div>
+  <!-- Utility Menu -->
+  <div id="utility-menu">
+    <!-- Search Box -->
+    <div id="searchbox">
+      <form method="get" action="http://google.co.jp/search" id="searchform" name="searchform">
+        <div id="search">
+          <input type="hidden" id="domains" name="domains" value="www.python.jp" />
+          <input type="hidden" id="sitesearch" name="sitesearch" value="www.python.jp" />
+          <input type="hidden" id="sourceid" name="sourceid" value="google-search" />
+          <input type="text" class="input-text" name="q" id="q" />
+          <input type="submit" value="検索" class="input-button" name="submit" id="submit" />
+        </div>
+      </form>
+    </div>
+    <div id="screen-switcher"></div>
+  </div>
+
+  <div id="left-hand-navigation">
+    <!-- Main Menu -->
+    <div id="menu">
+      <ul class="level-one">
+        %for link_1, level2_links in nav:
+          %if link_1.selected:
+            <li class="selected">
+          %else:
+            <li>
+          %endif
+          ${link_1.as_html()}
+          %if level2_links:
+	    <ul class="level-two">
+	    %for link_2, level3_links in level2_links:
+	      %if link_2.selected:
+		<li class="selected">
+	      %else:
+		<li>
+	      %endif
+	      ${link_2.as_html()}
+	      %if level3_links:
+		<ul class="level-three">
+		%for link_3, unused_links in level3_links:
+		  <li>${link_3.as_html()}</li>
+		%endfor
+		</ul>
+	      %endif
+              </li>
+	    %endfor
+	    </ul>
+          %endif
+        </li>
+        %endfor
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    %for link_1, level2_links in quicklinks:
+      <h4>${link_1.as_html()}</h4>
+
+      %if level2_links:
+	<ul class="quicklinks">
+	%for link_2, level3_links in level2_links:
+	  <li>${link_2.as_html()}</li>
+	%endfor
+	</ul>
+      %endif
+    %endfor
+    <h4><a style="color:#D58228; margin-top:1.5em" href="http://www.python.org/psf/donations/">Pythonに募金を！</a></h4>
+    <div style="align:center; padding-top: 0.5em; padding-left: 1em">
+      <a href="/psf/donations/"><img width="116" height="42" src="/images/donate.png" alt="" title="" /></a>
+    </div>
+    <div style="align:center; padding-top: 0.5em; padding-left: 2.5em">
+            <a href="http://wiki.python.org/moin/Languages"><img
+	      style="align:center"
+              width="94" height="46"
+	      src="/images/worldmap.jpg" alt="[Python resources in languages other than English]" /></a>
+    </div>
+    <div style="align:center; padding-top: 0.0em; padding-left: 0em">
+       <h4><a href="http://wiki.python.org/moin/Languages">各国語のPython情報</a></h4>
+    </div>
+    </div>
+  </div>
+
+  <div id="content-body">
+    <div id="body-main">
+      <div id="content">
+        ${self.content()}
+      </div>
+
+      ${self.footer()}
+
+    </div>
+  </div>
+</body>
+</html>
+
+<%def name="head()">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>${title}</title>
+  <meta name="keywords" content="${keywords | entity}" />
+  <meta name="description" content="${description | entity}" />
+  <link rel="alternate" type="application/rss+xml" title="Community Events"
+        href="http://www.python.org/channews.rdf" />
+  <link rel="alternate" type="application/rss+xml" title="Python Recipes"
+        href="http://aspn.activestate.com/ASPN/Cookbook/Python/index_rss" />
+  <link rel="alternate" type="application/rss+xml" title="Usergroup News"
+        href="http://python-groups.blogspot.com/feeds/posts/default" />
+  <link rel="alternate" type="application/rss+xml" title="Python Screencasts"
+        href="http://www.showmedo.com/latestVideoFeed/rss2.0?tag=python" />
+  <link rel="alternate" type="application/rss+xml" title="Python Podcasts"
+        href="http://www.awaretek.com/python/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Foundation News"
+        href="http://feeds.feedburner.com/PythonSoftwareFoundationNews" />
+  <link rel="alternate" type="application/rss+xml" title="Python Enhancement Proposals"
+        href="http://www.python.org/dev/peps/peps.rss" />
+  <link rel="alternate" type="application/rss+xml" title="Python Job Opportunities"
+        href="http://www.python.org/community/jobs/jobs.rss" />
+  <link rel="alternate" type="application/rss+xml" title="Reddit Feed of Python What's New Online"
+        href="http://www.reddit.com/r/Python/.rss" />
+  <link rel="alternate" type="application/rss+xml" title="Python Insider"
+        href="http://feeds.feedburner.com/PythonInsider" />
+
+  <link rel="stylesheet" type="text/css" media="screen" id="screen-switcher-stylesheet"
+        href="/styles/screen-switcher-default.css" />
+  <link rel="stylesheet" type="text/css" media="sc&#82;een"
+        href="/styles/netscape4.css" />
+  <link rel="stylesheet" type="text/css" media="print"
+        href="/styles/print.css" />
+  <link rel="alternate stylesheet" type="text/css" media="screen"
+        href="/styles/largestyles.css" title="large text" />
+  <link rel="alternate stylesheet" type="text/css" media="screen"
+        href="/styles/defaultfonts.css" title="default fonts" />
+
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search under the www.python.org Domain"
+        href="/search-pysite.xml"/>
+
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within the Python Wiki"
+        href="/search-pywiki.xml"/>
+
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within Python Books at Google Book Search"
+        href="/search-pybooks.xml"/>
+
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within the Python Documentation"
+        href="/search-pydocs.xml"/>
+
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search for a Module in the Standard Library"
+        href="/search-pymodules.xml"/>
+
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search for Packages inside the Cheeseshop (PyPI)"
+        href="/search-pycheese.xml"/>
+
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search Archives of the Main Python Mailing List"
+        href="/search-pythonlist.xml"/>
+
+  <script type="text/javascript" src="/js/iotbs2-key-directors-load.js"></script>
+  <script type="text/javascript" src="/js/iotbs2-directors.js"></script>
+  <script type="text/javascript" src="/js/iotbs2-core.js"></script>
+
+  %for js_url in javascript:
+    <script type="text/javascript" src="${js_url}"></script>
+  %endfor
+</head>
+</%def>
+
+<%def name="content()">
+        %if breadcrumbs:
+          <div id="breadcrumb">
+            %for link in breadcrumbs[:-1]:
+               ${link.as_html()}
+               <span class="breadcrumb-separator">&gt;</span>
+            %endfor
+            <% link = breadcrumbs[-1] %>
+            ${link.link_text}
+          </div>
+        %endif
+
+	%for fragment in fragments:
+          ${fragment}
+        %endfor
+
+	%if docnav:
+          <div id="document-navigation">
+            <h4>${docnav_title}</h4>
+            <ul class="level-one">
+            %for link_1, level2_links in docnav:
+              <li>${link_1.as_html()}</li>
+            %endfor
+            </ul>
+          </div>
+        %endif
+
+        ${text}
+</%def>
+
+<%def name="footer()">
+      <div id="footer">
+	<div id="credits">
+ 	  <a href="/about/website">Website maintained by the Python community</a><br/>
+	  <a href="http://www.timparkin.co.uk/" title="Design by Tim Parkin, Yorkshire man, photographer and developer">design by Tim Parkin</a>
+	</div>
+	Copyright &copy; 2001-2012, <a href='/psf/'>Python Japan User's Group</a><br/>
+	<a href="/about/legal">Legal Statements</a>
+      </div>
+</%def>

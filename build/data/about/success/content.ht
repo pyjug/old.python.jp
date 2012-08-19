@@ -1,0 +1,592 @@
+Content-type: text/x-rst
+Title: Python Success Stories
+
+Python Success Stories
+======================
+
+Python is part of the winning formula for productivity, software quality,
+and maintainability at many companies and institutions around the world.
+Here are 41 real-life Python success stories, classified by application domain.
+
+At this point, the marketing emphasis for Python has shifted to the
+`Brochure Project <http://brochure.getpython.info/learn-more>`__,
+please visit that page to submit a new Success Story.
+
+.. contents::
+
+Software Development
+--------------------
+
+Accessibility
++++++++++++++ 
+
+- `Python in The Blind Audio Tactile Mapping System </about/success/bats/>`__
+- `Python and Zope in the EZRO Content Management System </about/success/ezro/>`__
+
+Assistive Technologies
+++++++++++++++++++++++
+
+- `Python in The Blind Audio Tactile mapping System </about/success/bats/>`__
+- `A Custom Image Viewing Game for an Autistic Child </about/success/natsworld/>`__
+
+Code Generation
++++++++++++++++
+
+- `Cog: A Code Generation Tool Written in Python </about/success/cog/>`__
+
+Computer Graphics
++++++++++++++++++
+
+- `Industrial Light & Magic Runs on Python </about/success/ilm/>`__
+
+Configuration
++++++++++++++
+
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `Python as Technology Enabler for TTTech's Development Software </about/success/tttech/>`__
+
+Cross-platform Development
+++++++++++++++++++++++++++
+
+- `Integration of Legacy Monitoring Systems into a Central Management Console </about/success/tempest/>`__
+- `Python On Guard </about/success/guards>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+
+Databases
++++++++++
+
+- `Cog: A Code Generation Tool Written in Python </about/success/cog/>`__
+- `ForecastWatch.com Uses Python To Help Meteorologists </about/success/forecastwatch/>`__
+- `Gusto! Chooses Python for Travel Social Network Transition </about/success/gusto/>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+- `Python Enterprise-Wide at the University of St Andrews in Scotland </about/success/st-andrews/>`__
+
+Data Mining
++++++++++++
+
+- `ForecastWatch.com Uses Python To Help Meteorologists </about/success/forecastwatch/>`__
+
+Documentation Development
++++++++++++++++++++++++++
+
+- `Honeywell Avoids Documentation Costs with Python and other Open Standards </about/success/honeywell/>`__
+
+Email
++++++
+
+- `Enovad Used Python to Deliver its Armadillo Commercial Anti-Spam Software </about/success/enovad/>`__
+- `Python On Guard </about/success/guards>`__
+- `Why Python? </about/success/esr/>`__
+
+Embedded Systems
+++++++++++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `Python as Technology Enabler for TTTech's Development Software </about/success/tttech/>`__
+- `Python On Guard </about/success/guards>`__
+
+Functional Testing
+++++++++++++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+
+Game Development
+++++++++++++++++   
+
+- `A Custom Image Viewing Game for an Autistic Child </about/success/natsworld/>`__
+
+Groupware
++++++++++
+
+- `Botonomy Uses Python to Create ProjectPipe.com for Web-based Project Management </about/success/projectpipe/>`__
+- `Cog: A Code Generation Tool Written in Python </about/success/cog/>`__
+- `Rapid Application Development with Python </about/success/strakt/>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+
+High Availability
++++++++++++++++++
+
+- `GravityZoo: Bringing Your Desktop Applications To The Internet As A Service </about/success/gravityzoo/>`__
+- `Suzanne: Python Handles Critical Data in a Domain Name Landrush </about/success/suzanne/>`__
+
+Java and Python
++++++++++++++++
+
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `Frequentis TAPtools® - Python in Air Traffic Control </about/success/frequentis/>`__
+- `Gusto! Chooses Python for Travel Social Network Transition </about/success/gusto/>`__
+
+Legacy System Integration
++++++++++++++++++++++++++
+
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+- `Integration of Legacy Monitoring Systems into a Central Management Console </about/success/tempest/>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+
+Network Development
++++++++++++++++++++
+
+- `Botonomy Uses Python to Create ProjectPipe.com for Web-based Project Management </about/success/projectpipe/>`__
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `GravityZoo: Bringing Your Desktop Applications To The Internet As A Service </about/success/gravityzoo/>`__
+- `Super League Uses Python and PostgreSQL for Rapid Development </about/success/superleague/>`__
+- `Suzanne: Python Handles Critical Data in a Domain Name Landrush </about/success/suzanne/>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+- `Why Python? </about/success/esr/>`__
+
+Product Development
++++++++++++++++++++
+
+- `Acqutek Uses Python to Control CD/DVD Packaging Hardware </about/success/acqutek/>`__
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+- `Botonomy Uses Python to Create ProjectPipe.com for Web-based Project Management </about/success/projectpipe/>`__
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `Enovad Used Python to Deliver its Armadillo Commercial Anti-Spam Software </about/success/enovad/>`__
+- `GravityZoo: Bringing Your Desktop Applications To The Internet As A Service </about/success/gravityzoo/>`__
+- `IronPython at Resolver Systems: Python Learns New Tricks </about/success/resolver>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+- `Maritime Industry Increases Efficiency with Python </about/success/tribon/>`__
+- `Wing IDE Takes Flight with Python </about/success/wingide/>`__
+
+Python on Windows
++++++++++++++++++
+
+- `IronPython at Resolver Systems: Python Learns New Tricks </about/success/resolver>`__
+- `Python in The Blind Audio Tactile mapping System </about/success/bats/>`__
+
+Rapid Application Development 
++++++++++++++++++++++++++++++
+
+- `At Philips, The Semiconductor Line in Fishkill Runs on Python </about/success/philips/>`__
+- `Botonomy Uses Python to Create ProjectPipe.com for Web-based Project Management </about/success/projectpipe/>`__
+- `Enovad Used Python to Deliver its Armadillo Commercial Anti-Spam Software </about/success/enovad/>`__
+- `GravityZoo: Bringing Your Desktop Applications To The Internet As A Service </about/success/gravityzoo/>`__
+- `Integration of Legacy Monitoring Systems into a Central Management Console </about/success/tempest/>`__
+- `IronPython at Resolver Systems: Python Learns New Tricks </about/success/resolver>`__
+- `Rapid Application Development with Python </about/success/strakt/>`__
+- `Super League Uses Python and PostgreSQL for Rapid Development </about/success/superleague/>`__
+- `Maritime Industry Increases Efficiency with Python </about/success/tribon/>`__
+- `MayaVi Uses Python for Scientific Data Visualization </about/success/mayavi/>`__
+- `Python as Technology Enabler for TTTech's Development Software </about/success/tttech/>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+- `Python Streamlines Space Shuttle Mission Design </about/success/usa/>`__
+- `Wing IDE Takes Flight with Python </about/success/wingide/>`__
+
+
+Real Time
++++++++++
+
+- `Acqutek Uses Python to Control CD/DVD Packaging Hardware </about/success/acqutek/>`__
+- `Python as Technology Enabler for TTTech's Development Software </about/success/tttech/>`__
+- `Python On Guard </about/success/guards>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+
+Reuse
++++++
+
+- `Integration of Legacy Monitoring Systems into a Central Management Console </about/success/tempest/>`__
+- `Python is Rackspace's CORE Technology </about/success/rackspace/>`__
+
+RSS aggregator
+++++++++++++++
+
+- `DevNet: A web+based RSS aggregator developed in Python </about/success/devnet/>`__
+
+Scalability
++++++++++++
+
+- `GravityZoo: Bringing Your Desktop Applications To The Internet As A Service </about/success/gravityzoo/>`__
+- `Python and Zope in the EZRO Content Management System </about/success/ezro/>`__
+- `ForecastWatch.com Uses Python To Help Meteorologists </about/success/forecastwatch/>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+
+Systems Administration
+++++++++++++++++++++++
+
+- `Python Enterprise-Wide at the University of St Andrews in Scotland </about/success/st-andrews/>`__
+
+
+Testing
++++++++
+
+- `Suzanne: Python Handles Critical Data in a Domain Name Landrush </about/success/suzanne/>`__
+- `Test&Go Uses Python for Data Validation </about/success/testgo/>`__
+- `Python as Technology Enabler for TTTech's Development Software </about/success/tttech/>`__
+
+Unit Testing
+++++++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+
+Unix/Linux Developers
++++++++++++++++++++++
+
+- `Why Python? </about/success/esr/>`__
+
+User Interface
+++++++++++++++
+
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `Frequentis TAPtools® - Python in Air Traffic Control </about/success/frequentis/>`__
+- `Python in The Blind Audio Tactile mapping System </about/success/bats/>`__
+- `Python On Guard </about/success/guards>`__
+- `Python Streamlines Space Shuttle Mission Design </about/success/usa/>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+
+Visual Effects
+++++++++++++++
+
+- `Industrial Light & Magic Runs on Python </about/success/ilm/>`__
+
+Web Development
++++++++++++++++
+
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+- `Botonomy Uses Python to Create ProjectPipe.com for Web-based Project Management </about/success/projectpipe/>`__
+- `Python and Zope in the EZRO Content Management System </about/success/ezro/>`__
+- `Putting Web Services to Work with Python </about/success/siena/>`__
+- `Python Enterprise-Wide at the University of St Andrews in Scotland </about/success/st-andrews/>`__
+- `Verity Ultraseek: Building Successful Enterprise Solutions with Python </about/success/verity/>`__
+- `Wordstream Uses Python as Their Platform of Choice </about/success/wordstream/>`__
+
+Web2.0
+++++++
+
+- `Botonomy Uses Python to Create ProjectPipe.com for Web-based Project Management </about/success/projectpipe/>`__
+- `DevNet: A web+based RSS aggregator developed in Python </about/success/devnet/>`__
+- `Python and Zope in the EZRO Content Management System </about/success/ezro/>`__
+- `ForecastWatch.com Uses Python To Help Meteorologists </about/success/forecastwatch/>`__
+- `Gusto! Chooses Python for Travel Social Network Transition </about/success/gusto/>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+- `LoveIntros Uses Python to Help Northwest Singles Click </about/success/loveintros/>`__
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+- `Putting Web Services to Work with Python </about/success/siena/>`__
+- `Super League Uses Python and PostgreSQL for Rapid Development </about/success/superleague/>`__
+- `XIST:  An XML Transformation Engine Written in Python </about/success/xist/>`__
+
+XML
++++
+
+- `Cog: A Code Generation Tool Written in Python </about/success/cog/>`__
+- `Honeywell Avoids Documentation Costs with Python and other Open Standards </about/success/honeywell/>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+- `Super League Uses Python and PostgreSQL for Rapid Development </about/success/superleague/>`__
+- `XIST:  An XML Transformation Engine Written in Python </about/success/xist/>`__
+
+
+Arts
+----
+
+Film
+++++
+
+- `Industrial Light & Magic Runs on Python </about/success/ilm/>`__
+
+Sports
+++++++
+
+- `Super League Uses Python and PostgreSQL for Rapid Development </about/success/superleague/>`__
+
+Business
+--------
+
+
+Apparel Industry
+++++++++++++++++
+
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+
+
+Aviation
+++++++++
+
+- `Python and Zope in the EZRO Content Management System </about/success/ezro/>`__
+- `Frequentis TAPtools® - Python in Air Traffic Control </about/success/frequentis/>`__
+
+Business Information 
+++++++++++++++++++++
+
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+- `Integration of Legacy Monitoring Systems into a Central Management Console </about/success/tempest/>`__
+- `IronPython at Resolver Systems: Python Learns New Tricks </about/success/resolver>`__
+- `Python On Guard </about/success/guards>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+- `Verity Ultraseek: Building Successful Enterprise Solutions with Python </about/success/verity/>`__
+- `Wordstream Uses Python as Their Platform of Choice </about/success/wordstream/>`__
+
+Customer Relationship Management (CRM)
+++++++++++++++++++++++++++++++++++++++
+
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+
+Collaboration Support
++++++++++++++++++++++
+
+- `Cog: A Code Generation Tool Written in Python </about/success/cog/>`__
+- `Rapid Application Development with Python </about/success/strakt/>`__
+
+Content Management
+++++++++++++++++++
+
+- `Python and Zope in the EZRO Content Management System </about/success/ezro/>`__
+
+Document Management
++++++++++++++++++++
+
+- `Python Enterprise-Wide at the University of St Andrews in Scotland </about/success/st-andrews/>`__
+- `Test&Go Uses Python for Data Validation </about/success/testgo/>`__
+- `Verity Ultraseek: Building Successful Enterprise Solutions with Python </about/success/verity/>`__
+
+Energy Efficiency
++++++++++++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+
+E-Commerce
+++++++++++
+
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+- `Gusto! Chooses Python for Travel Social Network Transition </about/success/gusto/>`__
+- `LoveIntros Uses Python to Help Northwest Singles Click </about/success/loveintros/>`__
+- `Suzanne: Python Handles Critical Data in a Domain Name Landrush </about/success/suzanne/>`__
+- `Wordstream Uses Python as Their Platform of Choice </about/success/wordstream/>`__
+
+Enterprise Resource Planning (ERP)
+++++++++++++++++++++++++++++++++++
+
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+- `Python is Rackspace's CORE Technology </about/success/rackspace/>`__
+
+Financial Services
+++++++++++++++++++
+
+- `IronPython at Resolver Systems: Python Learns New Tricks </about/success/resolver>`__
+
+Fortune 500
++++++++++++
+
+- `Honeywell Avoids Documentation Costs with Python and other Open Standards </about/success/honeywell/>`__
+- `At Philips, The Semiconductor Line in Fishkill Runs on Python </about/success/philips/>`__
+
+GIS and Mapping
++++++++++++++++
+
+- `Python in The Blind Audio Tactile mapping System </about/success/bats/>`__
+
+Hosting
++++++++
+
+- `Python is Rackspace's CORE Technology </about/success/rackspace/>`__
+
+Human Resources
++++++++++++++++
+
+- `Python Enterprise-Wide at the University of St Andrews in Scotland </about/success/st-andrews/>`__
+
+Knowledge Management
+++++++++++++++++++++
+
+- `Python and Zope in the EZRO Content Management System </about/success/ezro/>`__
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+- `ForecastWatch.com Uses Python To Help Meteorologists </about/success/forecastwatch/>`__
+- `IronPython at Resolver Systems: Python Learns New Tricks </about/success/resolver>`__
+- `MayaVi Uses Python for Scientific Data Visualization </about/success/mayavi/>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+
+Manufacturing
++++++++++++++
+
+- `Acqutek Uses Python to Control CD/DVD Packaging Hardware </about/success/acqutek/>`__
+- `At Philips, The Semiconductor Line in Fishkill Runs on Python </about/success/philips/>`__
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `Maritime Industry Increases Efficiency with Python </about/success/tribon/>`__
+- `The Devil Framework: A Python-based Distributed System For Technology Integration </about/success/devil/>`__
+
+Pharmaceuticals
++++++++++++++++
+
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+
+Product Development
++++++++++++++++++++
+
+- `Acqutek Uses Python to Control CD/DVD Packaging Hardware </about/success/acqutek/>`__
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+- `Botonomy Uses Python to Create ProjectPipe.com for Web-based Project Management </about/success/projectpipe/>`__
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `IronPython at Resolver Systems: Python Learns New Tricks </about/success/resolver>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+- `Maritime Industry Increases Efficiency with Python </about/success/tribon/>`__
+- `Wing IDE Takes Flight with Python </about/success/wingide/>`__
+
+Project Management
+++++++++++++++++++
+
+- `Botonomy Uses Python to Create ProjectPipe.com for Web-based Project Management </about/success/projectpipe/>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+
+Quality Control, Six Sigma, Lean Manufacturing
+++++++++++++++++++++++++++++++++++++++++++++++
+
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+- `At Philips, The Semiconductor Line in Fishkill Runs on Python </about/success/philips/>`__
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+- `D-Link Australia Uses Python to Control Firmware Updates </about/success/dlink>`__
+- `ForecastWatch.com Uses Python To Help Meteorologists </about/success/forecastwatch/>`__
+- `Rapid Application Development with Python </about/success/strakt/>`__
+- `Suzanne: Python Handles Critical Data in a Domain Name Landrush </about/success/suzanne/>`__
+- `Test&Go Uses Python for Data Validation </about/success/testgo/>`__
+- `Maritime Industry Increases Efficiency with Python </about/success/tribon/>`__
+- `Python as Technology Enabler for TTTech's Development Software </about/success/tttech/>`__
+
+Relational Online Analytical Processing (ROLAP)
++++++++++++++++++++++++++++++++++++++++++++++++
+
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+
+Risk Management
++++++++++++++++
+
+- `Industrial Light & Magic Runs on Python </about/success/ilm/>`__
+
+ROI Case Study
+++++++++++++++
+
+- `Honeywell Avoids Documentation Costs with Python and other Open Standards </about/success/honeywell/>`__
+- `Python Powers Journyx Timesheet </about/success/journyx/>`__
+- `Python Streamlines Space Shuttle Mission Design </about/success/usa/>`__
+- `Verity Ultraseek: Building Successful Enterprise Solutions with Python </about/success/verity/>`__
+- `Wing IDE Takes Flight with Python </about/success/wingide/>`__
+
+Sports
+++++++
+
+- `Super League Uses Python and PostgreSQL for Rapid Development </about/success/superleague/>`__
+
+Education
+---------
+
+Post Secondary
+++++++++++++++
+
+- `Python in The Blind Audio Tactile mapping System </about/success/bats/>`__
+- `Python Enterprise-Wide at the University of St Andrews in Scotland </about/success/st-andrews/>`__
+
+Government
+----------
+
+
+Administration
+++++++++++++++
+
+- `Python and Zope in the EZRO Content Management System </about/success/ezro/>`__
+- `ERP5: Mission-critical ERP/CRM with Python and Zope </about/success/nexedi/>`__
+- `Test&Go Uses Python for Data Validation </about/success/testgo/>`__
+
+Homeland Security
++++++++++++++++++
+
+- `Frequentis TAPtools® - Python in Air Traffic Control </about/success/frequentis/>`__
+
+Public Safety
++++++++++++++
+
+- `Frequentis TAPtools® - Python in Air Traffic Control </about/success/frequentis/>`__
+- `Python as Technology Enabler for TTTech's Development Software </about/success/tttech/>`__
+
+Traffic Control, Urban Infrastructure
++++++++++++++++++++++++++++++++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+- `Frequentis TAPtools® - Python in Air Traffic Control </about/success/frequentis/>`__
+
+Scientific
+----------
+
+
+Biology
++++++++
+
+- `Simulating Biomolecules with Python </about/success/mmtk/>`__
+
+Bioinformatics
+++++++++++++++
+
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+
+Computational Chemistry
++++++++++++++++++++++++
+
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+- `Simulating Biomolecules with Python </about/success/mmtk/>`__
+
+Data Visualization
+++++++++++++++++++
+
+- `Simulating Biomolecules with Python </about/success/mmtk/>`__
+
+Drug Discovery
+++++++++++++++
+
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+
+GIS and Mapping
++++++++++++++++
+
+- `Python in The Blind Audio Tactile mapping System </about/success/bats/>`__
+
+Scientific Programing
++++++++++++++++++++++
+
+- `AstraZeneca Uses Python for Collaborative Drug Discovery </about/success/astra/>`__
+- `Python in The Blind Audio Tactile mapping System </about/success/bats/>`__
+- `ForecastWatch.com Uses Python To Help Meteorologists </about/success/forecastwatch/>`__
+- `MayaVi Uses Python for Scientific Data Visualization </about/success/mayavi/>`__
+- `Python Streamlines Space Shuttle Mission Design </about/success/usa/>`__
+
+Simulation
+++++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+
+Weather
++++++++
+
+- `ForecastWatch.com Uses Python To Help Meteorologists </about/success/forecastwatch/>`__
+- `Frequentis TAPtools® - Python in Air Traffic Control </about/success/frequentis/>`__
+
+Engineering
+-----------
+
+
+Energy Efficiency
++++++++++++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+
+GIS and Mapping
++++++++++++++++
+
+- `Python in The Blind Audio Tactile mapping System </about/success/bats/>`__
+
+Lighting
+++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+
+Marine
+++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+- `Maritime Industry Increases Efficiency with Python </about/success/tribon/>`__
+
+Simulation
+++++++++++
+
+- `Carmanah Lights the Way with Python </about/success/carmanah/>`__
+- `IronPython at Resolver Systems: Python Learns New Tricks </about/success/resolver>`__

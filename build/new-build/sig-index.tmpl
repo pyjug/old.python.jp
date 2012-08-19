@@ -1,0 +1,29 @@
+<%inherit file="pydotorg.tmpl"/>
+
+<%def name="content()">
+        ${parent.content()}
+
+	<table cellspacing="0" id="sigindex">
+	<thead>
+	<tr>
+	    <th>Name</th>
+	    <th>Coordinator</th>
+	    <th>Description</th>
+	    <th>Info</th>
+	</tr>
+	</thead>
+
+	<% sig_items = read_sigs() %>
+	%for sig in sig_items:
+          <tr>
+	    <td class="signame"><a href="/community/sigs/current/${sig['id']}">${sig['id']}</a></a></td>
+	    <td class="coordinator"><a href="${sig['link']}">${sig['name']}</a></td>
+	    <td class="description">${sig['description']}</td>
+	    <td class="archivesubscribe">
+	      <a href="http://mail.python.org/pipermail/${sig['id']}">archive</a>,
+	      <a href="http://mail.python.org/mailman/listinfo/${sig['id']}">subscribe</a>
+	    </td>
+	  </tr>
+	%endfor
+        </table>
+</%def>

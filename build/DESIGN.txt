@@ -1,0 +1,78 @@
+=========================================
+ Design of the New-Build PyDotOrg System
+=========================================
+
+:Author: Jeff Rush <jeff@taupro.com>
+
+How the Site Gets Updated
+=========================
+
+Contributors to the www.python.org website check out a copy of the content
+from subversion, make changes, **test** them locally, and check them back in.
+Processes on dinsdale.python.org automatically rebuild the live site.
+
+Upon check-in, a subversion hook (``/data/repos/www/hooks/update-web.py``) runs
+that does two things:
+
+1) Synchronizes the newer content of the repository with a local checked-out
+   image on the webserver of all the content files that go into building the
+   site.  This image is located under::
+
+     /data/ftp.python.org/pub/www.python.org/
+
+   The check-in hook also adds to the check-out image any new directories,
+   by running in each an "svn update" command, and invokes the *make*
+   command in each directory that has modified, added or deleted files.
+
+2) Writes into a flag file the subversion revision number of either this
+   check-in or that already in the flag file, whichever is higher.  This
+   flag file is located at::
+
+     /data/website-build/build/status/buildqueued
+
+Action #1 is so that we can run a build operation on that check-out image that
+turns the content files into static HTML that is served by Apache.  However,
+in the case of closely-spaced checkins, we do not want multiple builds running
+concurrently, hence action #2.  This flag file is checked by a CRON job that
+runs every 5 minutes under Andrew Kuchling's account (amk)::
+
+    umask 002 ; \
+        /data/website-build/build/scripts/post-commit-svnup-binary \
+        >> /data/website-build/build/status/postcommitlog.txt 2>&1
+
+scripts/post-commit-svnup-binary is a wrapper around
+scripts/post-commit-svnup.py.  If the flag is present, it runs
+scripts/server-build.py, which then runs new-build/build.py as
+follows::
+
+  new-build/build.py \
+    --cache=/data/tmp/pydotorg.cache \
+    -v \
+    -d data \
+    -o out \
+    -r images,styles,files,js
+
+which means:
+
+     Process the tree of content markup files starting a directory 'data' and
+     place the result under the directory 'out'.  Provide verbose process
+     messages to stdout, and cache the dependency tree within the pickle file
+     'pydotorg.cache'.  Afterward, copy the resource files in the directories
+     'images', 'styles', 'files' and 'js' under the output tree.
+
+
+Note(s):
+1) Progress messages of this overall procedure are logged in
+   ``/data/website-build/build/status/postcommitlog.txt``.
+
+2) The set of files processed is limited to:
+
+       .ht, .h, .asc, .rst, .html, .txt, .db, .gif, .png, .jpg, .yml.
+
+   All other file types are silently dropped from consideration.
+
+..
+   Local Variables:
+   mode: rst
+   mode: outline-minor
+   End:

@@ -1,0 +1,101 @@
+Content-type: text/x-rst
+Title: Python For Beginners
+
+Getting Started with Python
+===========================
+
+Welcome! Are you `completely new to programming
+<http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_?
+If *not* then we presume you will be looking for information about
+why and how to get started with Python.
+Fortunately an
+experienced programmer in any programming language (whatever it may be)
+can pick up Python very quickly.
+It's also easy for beginners to use and learn, so
+`jump in <http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_!
+
+
+Installing
+----------
+
+Installing Python is generally easy, and nowadays
+many Linux and UNIX distributions include a recent Python.
+Even 
+some Windows computers (notably those from HP) now come with Python
+already installed.
+If you *do* need to install Python and aren't confident about the
+task you can find
+a few notes on the
+`BeginnersGuide/Download <http://wiki.python.org/moin/BeginnersGuide/Download>`_
+wiki page, but installation is unremarkable on most platforms.
+
+
+Learning
+--------
+
+Before getting started, you may want to find out which `IDEs
+<http://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_ and `text
+editors <http://wiki.python.org/moin/PythonEditors>`_ are tailored to make
+Python editing easy, browse the list of `introductory books
+<http://wiki.python.org/moin/IntroductoryBooks>`_, or look at `code samples
+<http://wiki.python.org/moin/BeginnersGuide/Examples>`_ that you might find
+helpful.
+
+There is a list of tutorials suitable for experienced programmers on the
+`BeginnersGuide/Tutorials <http://wiki.python.org/moin/BeginnersGuide/Programmers>`_
+page. There is also a list of
+`resources in other languages </doc/nonenglish/>`_
+which might be useful if English is not your first language.
+
+The `online documentation <http://docs.python.org>`_
+is your first port of call for definitive information.
+There is a fairly brief
+`tutorial <http://docs.python.org/tutorial/>`_
+that gives you basic information about the language and
+gets you started. You can follow this by looking at the
+`library reference <http://docs.python.org/library/>`_
+for a full description of Python's many libraries and the
+`language reference <http://docs.python.org/reference/>`_ for
+a complete (though somewhat dry) explanation of Python's syntax.
+If you are looking for common Python recipes and patterns, you
+can browse the `ActiveState Python Cookbook
+<http://code.activestate.com/recipes/langs/python/>`_
+
+
+Looking for Something Specific?
+-------------------------------
+
+If you want to know whether a particular application, or a library
+with particular functionality, is available in Python there are a
+number of possible sources of information. The Python web site
+provides a
+`Python Package Index <http://pypi.python.org/pypi?%3Aaction=index>`_
+(also known as the *Cheese Shop*, a reference to the Monty Python
+script of that name).
+There is also a
+`search page </search>`_ for a number of sources of Python-related
+information. Failing that, just
+`Google <http://www.google.com>`_ for a phrase including the word ''python''
+and you may well get the result you need.
+If all else fails, ask on the
+`python newsgroup <news:comp.lang.python>`_
+and there's a good chance someone will put you on the right track.
+
+
+Frequently Asked Questions
+--------------------------
+
+If you have a question, it's a good idea to try the
+`FAQ </doc/faq/>`_, which answers the most commonly
+asked questions about Python.
+
+
+Looking to Help?
+----------------
+
+If you want to help to develop Python, take a look at the
+`developer area </dev/>`_ for further information.
+Please note that you don't have to be an expert programmer
+to help.  The documentation is just as important as the
+compiler, and still needs plenty of work!
+

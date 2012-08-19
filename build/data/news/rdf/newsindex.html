@@ -1,0 +1,27 @@
+  <channel>
+    <title>Python News</title>
+    <link>http://www.python.org/</link>
+    <description>Python-related news and announcements.
+      Python is an interpreted, interactive, object-oriented
+      programming language. </description>
+
+  <image>
+  <title>Python</title>
+  <url>http://www.python.org/images/python-logo.gif</url>
+  <link>http://www.python.org/</link>
+  </image>
+ 
+  <n:invisible n:data="news">
+  <n:invisible n:render="sequence" n:data=":20">
+    <item n:pattern="item" n:render="mapping">
+      <guid>http://www.python.org/news/index.html#<n:invisible  n:render="anchorify" n:data="pubDate"/></guid>
+      <title><n:slot name="title" /></title>
+      <description>
+        <n:invisible n:render="stringify" n:data="description"/>
+      </description>
+      <pubDate><n:slot name="pubDate" /></pubDate>
+    </item>
+  </n:invisible>
+  </n:invisible>
+
+  </channel>

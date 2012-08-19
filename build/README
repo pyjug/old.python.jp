@@ -1,0 +1,201 @@
+
+You are now in the top-level build directory of the Python web site
+(www.python.org). The parent of this directory is referred to as
+<buildroot> in the remainder of this document.
+
+This README explains how to build and view a local copy of the web site.
+More information on maintaining python.org can be found in the wiki at 
+http://wiki.python.org/moin/PythonWebsite
+
+Note that while the build process at first seems a little hostile to
+Windows users, in actual fact the commands run by "make" are
+generally simple and can easily be run from the Windows command line
+if you don't have Cygwin or mingw available to provide "make" and
+other Unix-like utility programs.
+
+Installation
+---------------
+
+External packages required:
+
+  Mako (http://www.makotemplates.org/)
+  [Note that Mako requires setuptools to install out-of-the-box.  You can
+   also just copy the lib/mako/ tree into your Python's site-packages
+   directory if you prefer not to install setuptools.]
+
+  PyYAML (http://pyyaml.org/wiki/PyYAML)
+
+  Docutils (http://docutils.sf.net)
+
+These can typically be installed as follows:
+
+  easy_install mako
+  easy_install pyyaml
+  easy_install docutils
+
+Usage
+---------------
+
+In the <buildroot>/build/ directory (this directory):
+
+ * Run 'make' to create output in the build/out/ directory.
+
+ * Run 'make peps' to convert the PEP sources (in peps/) to HTML
+   fragments (in <buildroot>/build/data/dev/peps/) suitable for
+   the build script.
+
+ * 'make all' is equivalent to 'make peps ; make new'.
+
+ * Run 'make serve' to run a little web server that will serve the 
+   build/out/ directory on http://localhost:8005/ for testing.
+
+ * Run 'make stop' to stop the web server started with 'make serve'.
+
+ * "make clean" erases the cache file pydotorg.cache and the
+   build/out/ directory.  This target lets you can fully rebuild 
+   everything from scratch to avoid confusion when hacking on the 
+   build system itself.
+
+Note that the Makefile assumes you are using Python version 2.5.  If
+that is not the case, you can use add 'PYTHON=python2.6' or similar
+to the 'make' command (for example 'make PYTHON=python2.6').
+
+On non-Posix platforms, you can manually execute the same commands found 
+in the Makefile for each build target, or write a small batch/script
+file that does it.
+
+The file build.py is the main script. It somewhat imperfectly tries to
+track dependencies to avoid unnecessary content rebuild.  This isn't
+perfect, so you may run into failure to rebuild when changing some
+peripheral files other than the *.ht's.
+
+
+Writing content
+-------------------
+
+Each page has a directory of its own.  www.python.org/community/jobs/
+is built from the contents of the <buildroot>/build/data/community/jobs/
+directory, for example.
+
+If you're adding a new page, create a new directory containing a
+content.ht file.  This file contains a set of RFC-822 headers for
+metadata, and the actual page content.
+
+[For Pyramid compatibility: content.rst, nav.yml, and index.yml files
+are still supported by the build system, but we're working on phasing
+them out.  You shouldn't write new ones.]
+
+Allowed values of headers in .ht files (case-insensitive):
+
+	Title
+		Used in <title> tag.
+
+	Content-type
+		How to interpret the rest of the file (options are: 
+                text/html, text/x-rst, text/plain)
+
+	Keywords
+		Included inside a <meta> tag inside the <head>
+	Description
+		Included inside a <meta> tag inside the <head>
+	Javascript
+		Whitespace separated list of  URLs for JavaScript files
+	        (e.g. /js/file1.js /styles/style.js)
+
+	Template
+		Name of template to use for this page; limited to filenames
+	        from the list new-build/*.tmpl.  "pydotorg" is the default 
+	        page design.
+
+	Fragments
+		Name of fragments of HTML to include in the page alongside
+		the page's content from the .ht file; limited to filenames
+	        from the list new-build/fragments/*.html.
+		
+
+	Quick-links
+		Indented list of quick links to be placed at the bottom of 
+		the left-hand sidebar.
+
+	Nav
+		Indented list of navigation links for this page; these
+		are used to assemble the left-hand sidebar.
+
+	Document-nav
+		Indented list of content navigation links for this page.
+		If provided, these links are placed in a box in the upper
+		right-hand corner of a page, with a title provided by the
+		value of the 'Subnav-title' header.
+	Document-nav-title
+		Title used for the box containing the content navigation links.
+		Defaults to 'About'.
+
+Specialized headers:
+
+	Using-Python
+		Indented list of links to put in the 'Using Python' box
+	        of the "homepage" template.
+
+Indented lists are written like this::
+
+    Quick Links (2.5) /download/releases/2.5
+        Documentation {Manuals for Latest Stable Release} http://docs.python.org/
+        Windows Installer {Easy Installer of Python under Windows} /ftp/python/2.5/python-2.5.msi
+        Source Distribution {Grab the Source for the Latest Stable Release} /ftp/python/2.5/Python-2.5.tar.bz2
+        Package Index {Community Collection of Shared Python Modules} /pypi
+
+The last item on each line is a URL or URL path component.  
+
+Text between curly brackets {} will be used as the TITLE attribute 
+of the link.
+
+The rest of the line is the text of the link (between <a>...</a>).
+
+
+Remaining Tasks
+-------------------
+
+Known bugs:
+  The build script should be changed to get the dependencies right
+  for those pages that use newsindex.yml.
+
+  The quick links that appear on the home page (below the left-hand
+  nav menu) no longer appear on any other page on the site. They did   
+  with Pyramid, and they should still.
+
+  Windows users may not have "make" available.
+  ["make" isn't terribly Windows-friendly. How easy would it be to provide
+  scripts that do the same job as the make limes for Windows users?]
+
+  Broken page list:
+    None known.  Please report problems to webmaster@python.org, or to
+    the pydotorg mailing list.
+
+Other tasks:
+  Clean up : Change nav to be static and separate out context specific
+    values like selected and whether children are shown; then can avoid
+    copying and recomputing by just building one big nav tree (tho need
+    to make sure it's updated correctly when structure changes)
+  Automatically pull down success stories list / content from pythonology.org
+  Write redirect configuration tool (the test server already supports it)
+  Write separate tools for pulling in wiki pages, effbot's FAQs, etc.
+  Simplify specification of navigation and remove the thousands of
+    identical or nearly identical files
+  Fix docutils reporting to report the correct line number in case of error.
+
+Fixed issues:
+  Broken page list:
+    /news/archive -- not going to bother with this; do we need such old news?
+    /download/contributed -- search vaults subnav (not going to bother)
+    Everything else found with "find . -name subnav.yml"
+       (found in community/sigs/ and download/releases/ -- can be handled
+        with the document-nav, document-nav-title headers)
+
+  Other pages with non-standard named yml/etc can be found with:
+    find . -name \*.yml | grep -v content | grep -v index | grep -v nav.yml
+    find . -name \*.html | grep -v content | grep -v subnav | grep -v body
+  All of these .yml and .html files are either handled by the new build or 
+  don't need to be supported.
+
+
+--amk

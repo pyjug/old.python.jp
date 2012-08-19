@@ -1,0 +1,172 @@
+<%inherit file="pydotorg.tmpl"/>
+
+<%def name="content()">
+        ## XXX should set breadcrumbs to empty here
+
+        <h1 class="pageheading">${title}</h1>
+
+	<div id="homepage-boxes">
+
+
+
+          <div class="homepage-box" style="text-align:center">
+           <h4><a href="http://2012.pycon.jp/index.html">Python Conference Japan</a></h4>
+           <p style="background-color:white"><a href="http://2012.pycon.jp/index.html"><img src="http://3.bp.blogspot.com/-lSnmV_ySbqk/T9ApRZn7M0I/AAAAAAAAAXg/AO51_9yEL40/s300/pyconjp2012_logo.png" width=200/></a></p>
+          </div>
+
+          <div class="homepage-box" style="text-align:center">
+           <h4><a href="http://code.google.com/p/python-doc-ja/">python-doc-ja</a></h4>
+           <p><a href="http://code.google.com/p/python-doc-ja/">Pythonドキュメント翻訳プロジェクト</a></p>
+          </div>
+
+
+          <div class="homepage-box" style="text-align:center">
+           <h4><a href="/Zope">旧サイト</a></h4>
+           <p><a href="/Zope">以前のwww.python.jpサイト</a></p>
+          </div>
+	</div>
+
+        <div id="intro">
+          ${parent.content()}
+        </div>
+
+        <div class="content-section">
+            <div id="newsindex" class="news-section">
+	      <% news_items = read_news() %>
+	      %for item in news_items[:7]:
+		<h2 class="news">${item['title']}</h2>
+		  ${item['description']}
+		<div class="pubdate">Published: ${item['pubDate']}</div>
+	      %endfor
+	      [ <a href="/channews.rdf">RSS</a> ]
+             </div>
+        </div>
+</%def>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>${title}</title>
+  <meta name="keywords" content="${keywords | entity}" />
+  <meta name="description" content="${description | entity}" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.python.org/channews.rdf" />
+  <link rel="stylesheet" type="text/css" media="screen" id="screen-switcher-stylesheet" href="/styles/screen-switcher-default.css" />
+  <link rel="stylesheet" type="text/css" media="sc&#82;een" href="/styles/netscape4.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="/styles/largestyles.css" title="large text" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="/styles/defaultfonts.css" title="default fonts" />
+  <script type="text/javascript" src="/js/iotbs2-key-directors-load.js"></script>
+  <script type="text/javascript" src="/js/iotbs2-directors.js"></script>
+  <script type="text/javascript" src="/js/iotbs2-core.js"></script> 
+
+  %for js_url in javascript:
+    <script type="text/javascript" src="${js_url}"></script>
+  %endfor
+</head>
+
+<body>
+  <!-- Logo -->
+  <h1 id="logoheader">
+    <a href="/" id="logolink" accesskey="1"><img id="logo" src="/images/python-logo.gif" alt="homepage" border="0" /></a>
+  </h1>
+  <!-- Skip to Navigation -->
+  <div class="skiptonav"><a href="#left-hand-navigation" accesskey="2"><img src="/images/trans.gif" id="skiptonav" alt="skip to navigation" border="0" /></a></div>
+  <div class="skiptonav"><a href="#content-body" accesskey="3"><img src="/images/trans.gif" id="skiptocontent" alt="skip to content" border="0" /></a></div>
+  <!-- Utility Menu -->
+  <div id="utility-menu">
+    <!-- Search Box -->
+    <div id="searchbox">
+      <form method="get" action="http://google.co.jp/search" id="searchform" name="searchform">
+        <div id="search">
+          <input type="hidden" id="domains" name="domains" value="www.python.jp" />
+          <input type="hidden" id="sitesearch" name="sitesearch" value="www.python.jp" />
+          <input type="hidden" id="sourceid" name="sourceid" value="google-search" />
+          <input type="text" class="input-text" name="q" id="q" />
+          <input type="submit" value="讀懃ｴ｢" class="input-button" name="讀懃ｴ｢" id="submit" />
+        </div>
+      </form>
+    </div>
+    <div id="screen-switcher"></div>
+  </div>
+
+  <div id="left-hand-navigation">
+    <!-- Main Menu -->
+    <div id="menu">
+      <ul class="level-one">
+        %for link_1, level2_links in nav:
+          %if link_1.selected:
+            <li class="selected">
+          %else:
+            <li>
+          %endif
+          ${link_1.as_html()}
+          %if level2_links:
+	    <ul class="level-two">
+	    %for link_2, level3_links in level2_links:
+	      %if link_2.selected:
+		<li class="selected">
+	      %else:
+		<li>
+	      %endif
+	      ${link_2.as_html()}
+	      %if level3_links:
+		<ul class="level-three">
+		%for link_3, unused_links in level3_links:
+		  <li>${link_3.as_html()}</li>
+		%endfor
+		</ul>
+	      %endif
+              </li>
+	    %endfor
+	    </ul>
+          %endif
+        </li>
+        %endfor
+      </ul>
+    </div>
+    
+    <!-- Quick Links -->
+    %for link_1, level2_links in quicklinks:
+      <h4>${link_1.as_html()}</h4>
+
+      %if level2_links:
+	<ul class="quicklinks">
+	%for link_2, level3_links in level2_links:
+	  <li>${link_2.as_html()}</li>
+	%endfor
+	</ul>
+      %endif
+    %endfor
+  </div>
+
+  <div id="content-body">
+    <div id="body-main">
+      <div id="content">
+        <h1 class="pageheading">${title}</h1>
+
+        <div id="intro">
+        ${text}
+        </div>
+        <div class="content-section">
+            <div id="newsindex" class="news-section">
+            <% news_items = read_news() %>
+            %for item in news_items[:5]:
+              <h2 class="news">${item['title']}</h2>
+  	        ${item['description']}
+              <div class="pubdate">Published: ${item['pubDate']}</div>
+            %endfor
+            [ <a href="/channews.rdf">RSS</a> ]
+        </div>
+      </div>
+      <div id="footer">
+	<div id="credits">
+ 	  <a href="/about/website">Website maintained by the Python community</a><br/>
+	</div>
+	Copyright &copy; 2001-2012, <a href='/psf'>Python Japan User's Group</a><br/>
+	<a href="/about/legal">Legal Statements</a>
+  
+      </div>
+    </div>
+  </div>
+</body>
+</html>

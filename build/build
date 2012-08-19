@@ -1,0 +1,3 @@
+#!/bin/sh
+# This has been replaced with a Python script
+./build.py

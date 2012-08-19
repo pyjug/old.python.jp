@@ -1,0 +1,59 @@
+Title: PSF-2006-001 - Buffer overrun in repr() for UCS-4 encoded unicode strings
+
+<h2>PSF-2006-001 - Buffer overrun in repr() for UCS-4 encoded unicode strings</h2>
+
+<hr>
+
+<h3>Python Security Advisory</h3>
+
+<pre><b>
+Advisory ID:  <a href="/files/news/security/PSF-2006-001/PSF-2006-001.txt">PSF-2006-001</a>
+Issue Date:   October 12, 2006
+Product:      Python
+Versions:     2.2, 2.3 prior to 2.3.6, 2.4 prior to 2.4.4, wide unicode (UCS-4) builds only
+CVE Names:    CAN-2006-4980
+</b></pre>
+
+<hr>
+
+<p>Python is an interpreted, interactive, object-oriented programming language.
+It is often compared to Tcl, Perl, Scheme or Java.</p>
+
+<p>The Python development team has discovered a flaw in the repr() 
+implementation of Unicode string objects which can lead to execution 
+of arbitrary code due to an overflow in a buffer allocated with 
+insufficient size.</p>
+
+<p>The flaw only manifests itself in Python builds configured to support
+UCS-4 Unicode strings (using the --enable-unicode=ucs4 configure flag).
+This is still not the default, which is why the vulnerability should not
+be present in most Python builds out there, especially not the builds
+for the Windows or Mac OS X platform provided by www.python.org.</p>
+
+<p>You can find out whether you are running a UCS-4 enabled build by
+looking at the sys.maxunicode attribute: it is 65535 in a UCS-2 build
+and 1114111 in a UCS-4 build.</p>
+
+<p>More information can be found in this
+posting to the python-dev mailing list:
+<a href="http://mail.python.org/pipermail/python-dev/2006-October/069260.html">http://mail.python.org/pipermail/python-dev/2006-October/069260.html</a></p>
+
+<p>The Common Vulnerabilities and Exposures project (cve.mitre.org) 
+has assigned the name CAN-2006-4980 to this issue.</p>
+
+<p<a href="http://www.python.org/2.4.4/">Python 2.4.4</a> and 
+<a href="http://www.python.org/2.3.6/">Python 2.3.6</a> are available
+from <a href="http://www.python.org/">www.python.org</a> and 
+contain a fix for this issue. 
+Python 2.5 also contains the fix and is not vulnerable.</p>
+
+<p>Patches for Python 2.2, 2.3 and 2.4 are also immediately available:</p>
+
+<ul>
+   <li><a href="http://python.org/files/news/security/PSF-2006-001/patch-2.3.txt">http://python.org/files/news/security/PSF-2006-001/patch-2.3.txt</a> (Python 2.2, 2.3)
+   <li><a href="http://python.org/files/news/security/PSF-2006-001/patch-2.4.txt">http://python.org/files/news/security/PSF-2006-001/patch-2.4.txt</a> (Python 2.4)
+</ul>
+
+<p>Acknowledgement: thanks to Benjamin C. Wiley Sittler for discovering 
+this issue.</p>
+

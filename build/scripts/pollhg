@@ -1,0 +1,6 @@
+#!/bin/sh
+cd /data/website-build/build/peps
+if [ -n "`hg -q inc`" ]
+then
+  touch /data/website-build/build/status/pepqueued
+fi 

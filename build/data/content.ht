@@ -1,0 +1,39 @@
+title: プログラミング言語 Python
+keywords: python programming language object oriented web free source
+description:
+      Home page for Python, an interpreted, interactive, object-oriented, extensible
+      programming language. It provides an extraordinary combination of clarity and
+      versatility, and is free and comprehensively ported.
+javascript:
+Content-type: text/x-rst
+Template: homepage
+Nav:
+    Pythonとは {プログラミング言語 Pythonとは} about/
+    News {最近のできごと} news/
+    ドキュメント {チュートリアル、 ライブラリ リファレンス、 C API} doc/
+    ダウンロード {Start Running Python Under Windows, Mac, Linux and Others} download/
+    コミュニティ {メーリングリスト、 イベントなど} community/
+    PyJUGについて {日本Pythonユーザ会について} pyjug/
+Quick-links:
+    公式ウェブサイト {Python Programming Language Official Website} http://www.python.org
+    Pythonパッケージインデックス {Pythonソフトウェアリポジトリ} http://pypi.python.org/pypi
+    Python 2.7.3 http://www.python.org/download/releases/2.7.3/
+        日本語ドキュメント {最新ドキュメント} http://docs.python.org/
+        Windows インストーラ {Windows環境用 Pythonインストーラ} http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi
+        ソースコード {最新版 ソースコード} http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2
+    Python 3.2.3 http://www.python.org/download/releases/3.2.3/
+        ドキュメント {Python 3.2.3 ドキュメント} http://docs.python.org/3.2/
+        Windows インストーラ {Windows環境用 Pythonインストーラ} http://www.python.org/ftp/python/3.2.3/python-3.2.3.msi
+        ソースコード {Python 3.2.3 ソースコード} http://www.python.org/ftp/python/3.2.3/Python-3.2.3.tar.bz2
+
+
+**プログラミング言語 Pythonなら、仕事はもっと迅速に、もっと効率的に。Pythonを学んで、今すぐ生産性の向上とコスト削減を。**
+
+
+Pythonは、Windows、Linux/Unix、Mac OS Xなどで動作し、 Javaや.NETなどの仮想環境にも移植されています。
+
+PythonはOSIに認証された `オープンソースライセンス </psf/license/>`__ で公開されており、商用製品であっても無料で利用できます。
+
+このサイトは、Pythonの普及と発展を目的とする非営利団体 `日本Pythonユーザ会 (PyJUG) </pyjug>`__ が運営します。
+
+`Pythonについてもっと詳しく </about>`__ 
