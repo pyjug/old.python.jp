@@ -1,101 +1,152 @@
 Content-type: text/x-rst
 Title: Python For Beginners
 
-Getting Started with Python
-===========================
+.. Getting Started with Python
 
-Welcome! Are you `completely new to programming
-<http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_?
-If *not* then we presume you will be looking for information about
-why and how to get started with Python.
-Fortunately an
-experienced programmer in any programming language (whatever it may be)
-can pick up Python very quickly.
-It's also easy for beginners to use and learn, so
-`jump in <http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_!
+Pythonを始めよう
+================
 
+.. Welcome! Are you `completely new to programming
+   <http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_?
+   If *not* then we presume you will be looking for information about
+   why and how to get started with Python.
+   Fortunately an
+   experienced programmer in any programming language (whatever it may be)
+   can pick up Python very quickly.
+   It's also easy for beginners to use and learn, so
+   `jump in <http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_!
 
-Installing
-----------
+ようこそ！あなたは、\ `プログラミングも初めて <http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_\ でしょうか？\
+もしそうでなければ、あなたはPythonをなぜはじめるのか、どのようにはじめるのか、といった情報をすばやく見つけることができるでしょう。\
+幸い、どんな言語であれ、プログラミング言語の経験があるプログラマーであれば、Pythonをすばやく習得することができます。\
+まったくの初心者でも、簡単に使用したり、学ぶことができますので、ぜひ\ `トライ <http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_\
+してみてください！
 
-Installing Python is generally easy, and nowadays
-many Linux and UNIX distributions include a recent Python.
-Even 
-some Windows computers (notably those from HP) now come with Python
-already installed.
-If you *do* need to install Python and aren't confident about the
-task you can find
-a few notes on the
-`BeginnersGuide/Download <http://wiki.python.org/moin/BeginnersGuide/Download>`_
-wiki page, but installation is unremarkable on most platforms.
+.. Installing
 
+インストール
+------------
 
-Learning
+.. Installing Python is generally easy, and nowadays
+   many Linux and UNIX distributions include a recent Python.
+   Even 
+   some Windows computers (notably those from HP) now come with Python
+   already installed.
+   If you *do* need to install Python and aren't confident about the
+   task you can find
+   a few notes on the
+   `BeginnersGuide/Download <http://wiki.python.org/moin/BeginnersGuide/Download>`_
+   wiki page, but installation is unremarkable on most platforms.
+
+Pythonのインストールは極めて簡単です。また、最近の多くのLinuxやUNIXのディストリビューションは、はじめから新しいバージョンのPythonを含んでいます。\
+Windowsのパソコンでも(特にHP)、Pythonがインストールされていることがあります。もし、インストールが必要だったり、インストール作業について確信が持てない\
+場合には、参考になる情報がWikiページの\ `BeginnersGuide/Download <http://wiki.python.org/moin/BeginnersGuide/Download>`_\
+にあります。しかし、ほとんどの環境で、特別なことはありません。
+
+.. Learning
+
+学習する
 --------
 
-Before getting started, you may want to find out which `IDEs
-<http://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_ and `text
-editors <http://wiki.python.org/moin/PythonEditors>`_ are tailored to make
-Python editing easy, browse the list of `introductory books
-<http://wiki.python.org/moin/IntroductoryBooks>`_, or look at `code samples
-<http://wiki.python.org/moin/BeginnersGuide/Examples>`_ that you might find
-helpful.
+.. Before getting started, you may want to find out which `IDEs
+   <http://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_ and `text
+   editors <http://wiki.python.org/moin/PythonEditors>`_ are tailored to make
+   Python editing easy, browse the list of `introductory books
+   <http://wiki.python.org/moin/IntroductoryBooks>`_, or look at `code samples
+   <http://wiki.python.org/moin/BeginnersGuide/Examples>`_ that you might find
+   helpful.
 
-There is a list of tutorials suitable for experienced programmers on the
-`BeginnersGuide/Tutorials <http://wiki.python.org/moin/BeginnersGuide/Programmers>`_
-page. There is also a list of
-`resources in other languages </doc/nonenglish/>`_
-which might be useful if English is not your first language.
+Pythonの学習をする前に、もしかするとPythonのコードの記述を簡単に行えるようにしてくれる\ `統合開発環境
+<http://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_\ や\ `テキストエディタ
+<http://wiki.python.org/moin/PythonEditors>`_\ 、\ `入門書
+<http://wiki.python.org/moin/IntroductoryBooks>`_\ について知りたいと思うかもしれません。\
+また、\ `コードサンプル <http://wiki.python.org/moin/BeginnersGuide/Examples>`_\ も役立つと感じられるでしょう。
 
-The `online documentation <http://docs.python.org>`_
-is your first port of call for definitive information.
-There is a fairly brief
-`tutorial <http://docs.python.org/tutorial/>`_
-that gives you basic information about the language and
-gets you started. You can follow this by looking at the
-`library reference <http://docs.python.org/library/>`_
-for a full description of Python's many libraries and the
-`language reference <http://docs.python.org/reference/>`_ for
-a complete (though somewhat dry) explanation of Python's syntax.
-If you are looking for common Python recipes and patterns, you
-can browse the `ActiveState Python Cookbook
-<http://code.activestate.com/recipes/langs/python/>`_
+.. There is a list of tutorials suitable for experienced programmers on the
+   `BeginnersGuide/Tutorials <http://wiki.python.org/moin/BeginnersGuide/Programmers>`_
+   page. There is also a list of
+   `resources in other languages </doc/nonenglish/>`_
+   which might be useful if English is not your first language.
 
+プログラミング経験者に適したチュートリアルのリストが\ 
+`BeginnersGuide/Tutorials <http://wiki.python.org/moin/BeginnersGuide/Programmers>`_\
+にあります。英語が母国語ではない人向けに、\ `英語以外のリソース </doc/nonenglish/>`_\
+もあります。
 
-Looking for Something Specific?
--------------------------------
+.. The `online documentation <http://docs.python.org>`_
+   is your first port of call for definitive information.
+   There is a fairly brief
+   `tutorial <http://docs.python.org/tutorial/>`_
+   that gives you basic information about the language and
+   gets you started. You can follow this by looking at the
+   `library reference <http://docs.python.org/library/>`_
+   for a full description of Python's many libraries and the
+   `language reference <http://docs.python.org/reference/>`_ for
+   a complete (though somewhat dry) explanation of Python's syntax.
+   If you are looking for common Python recipes and patterns, you
+   can browse the `ActiveState Python Cookbook
+   <http://code.activestate.com/recipes/langs/python/>`_
 
-If you want to know whether a particular application, or a library
-with particular functionality, is available in Python there are a
-number of possible sources of information. The Python web site
-provides a
-`Python Package Index <http://pypi.python.org/pypi?%3Aaction=index>`_
-(also known as the *Cheese Shop*, a reference to the Monty Python
-script of that name).
-There is also a
-`search page </search>`_ for a number of sources of Python-related
-information. Failing that, just
-`Google <http://www.google.com>`_ for a phrase including the word ''python''
-and you may well get the result you need.
-If all else fails, ask on the
-`python newsgroup <news:comp.lang.python>`_
-and there's a good chance someone will put you on the right track.
+何かあった時にすぐに参照すべきが、\ `オンラインドキュメント <http://docs.python.jp>`_\ です。\
+そこにある簡潔な\ `チュートリアル <http://docs.python.jp/tutorial/>`_\ を見ると、言語と学習時に必要な基本的な情報を得ることができます。\
+これを読んだあとは、Pythonに含まれる大きなライブラリ群の完全なドキュメントである\ `ライブラリリファレンス <http://docs.python.jp/library/>`_\
+と、Pythonの文法を完全に説明している(が、少々ドライな)\ `言語リファレンス <http://docs.python.jp/reference/>`_\
+を読むと、Pythonのほぼすべての情報が得られるでしょう。もし、よくあるPythonのレシピやパターンを読みたい場合は、\
+`ActiveState Python Cookbook <http://code.activestate.com/recipes/langs/python/>`_\ に多くの情報が含まれています。
 
+.. Looking for Something Specific?
 
-Frequently Asked Questions
+特定のものを探すには？
+----------------------
+
+.. If you want to know whether a particular application, or a library
+   with particular functionality, is available in Python there are a
+   number of possible sources of information. The Python web site
+   provides a
+   `Python Package Index <http://pypi.python.org/pypi?%3Aaction=index>`_
+   (also known as the *Cheese Shop*, a reference to the Monty Python
+   script of that name).
+   There is also a
+   `search page </search>`_ for a number of sources of Python-related
+   information. Failing that, just
+   `Google <http://www.google.com>`_ for a phrase including the word ''python''
+   and you may well get the result you need.
+   If all else fails, ask on the
+   `python newsgroup <news:comp.lang.python>`_
+   and there's a good chance someone will put you on the right track.
+
+もし、Pythonで書かれた特定の機能を持ったアプリケーションやライブラリを探したい場合は、多くの情報源があります。\
+Pythonのウェブサイトでは、\ `Python Package Index <http://pypi.python.org/pypi?%3Aaction=index>`_\
+(略称はPyPI: ぱいぴーあい)を提供しています。これはモンティ・パイソンのスケッチの名前から、\ **Cheese Shop**\ という愛称でも知られています。\
+Pythonに関連した情報源を検索するための\ `検索ページ </search>`_\ もあります。これでも見つけられない場合は、
+`Google <http://www.google.com>`_\ に、検索したい用語と\ ''python''\ の文字を入れて検索してみると、欲しい情報が得られるでしょう。\
+もしそれでも見つけられない場合には、\ `pythonニューズグループ <news:comp.lang.python>`_\
+で質問すると、誰かが正しい道を教えてくれるでしょう。
+
+.. Frequently Asked Questions
+
+よくある質問と答え
 --------------------------
 
-If you have a question, it's a good idea to try the
-`FAQ </doc/faq/>`_, which answers the most commonly
-asked questions about Python.
+.. If you have a question, it's a good idea to try the
+   `FAQ </doc/faq/>`_, which answers the most commonly
+   asked questions about Python.
 
+もし何か疑問があるのであれば、ぜひ\ `FAQ </doc/faq/>`_\
+を試してみてください。Pythonに関する一般的な疑問の答えが書かれています。
 
-Looking to Help?
-----------------
+.. Looking to Help?
 
-If you want to help to develop Python, take a look at the
-`developer area </dev/>`_ for further information.
-Please note that you don't have to be an expert programmer
-to help.  The documentation is just as important as the
-compiler, and still needs plenty of work!
+Pythonの開発に協力したい場合は？
+--------------------------------
+
+.. If you want to help to develop Python, take a look at the
+   `developer area </dev/>`_ for further information.
+   Please note that you don't have to be an expert programmer
+   to help.  The documentation is just as important as the
+   compiler, and still needs plenty of work!
+
+もしPythonの開発に協力したい場合は、\ `開発者エリア </dev/>`_\ に詳しい情報があります。\
+Pythonに協力するとはいっても、必ずしもエキスパートのプログラマーである必要はありません。\
+言語の処理系と同じぐらい、ドキュメントも重要と考えていますし、まだまだ多くの作業が必要です！
 
