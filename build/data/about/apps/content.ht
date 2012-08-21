@@ -1,22 +1,34 @@
 Content-type: text/x-rst
 Title: Applications for Python
 
-Application Domains
-===================
+.. Application Domains
 
-Python is used in many application domains.  Here's
-a sampling.
+アプリケーション・ドメイン
+==========================
 
-* The `Python Package Index <http://pypi.python.org/pypi>`_ hosts thousands of third party modules for Python.
+.. Python is used in many application domains.  Here's
+   a sampling.
 
-Web and Internet Development
+Pythonはさまざまな分野のアプリケーションで使用されています。ここで紹介するのはその一例です。
+
+.. * The `Python Package Index <http://pypi.python.org/pypi>`_ hosts thousands of third party modules for Python.
+
+* `Python Package Index <http://pypi.python.org/pypi>`_ ではPythonのための数万のサードパーティのモジュールをホストしています。
+
+.. Web and Internet Development
+
+ウェブ・インターネット開発
 ----------------------------
 
 .. sidebar:: |Serving the Web using Python|
-   :subtitle: Serving the Web using Python
+   :subtitle: Pythonを使ったウェブ開発
 
-   These short screencasts will walk you through the basics of several of the
-   more popular web frameworks for Python.
+   .. Serving the Web using Python
+
+   .. These short screencasts will walk you through the basics of several of the
+      more popular web frameworks for Python.
+
+   ここで紹介するスクリーンキャストを見ると、Pythonで人気にあるいくつかのウェブフレームワークの基礎を知ることができます。
 
     + `Learn Django: Create a Wiki in 20 minutes <http://showmedo.com/videos/video?name=1100000&fromSeriesID=110>`__
     + `TurboGears 20 Minute Wiki <http://showmedo.com/videos/series?name=TurboGears20MinWiki>`__
@@ -30,84 +42,147 @@ Web and Internet Development
 
 .. |Serving the Web using Python| image:: /images/python-video-icon.png
 
-Python offers a wide range of choices for `web development
-<http://wiki.python.org/moin/WebProgramming>`_:
+.. Python offers a wide range of choices for `web development
+   <http://wiki.python.org/moin/WebProgramming>`_:
 
-* `Writing basic CGI scripts <http://wiki.python.org/moin/CgiScripts>`_.
-* Frameworks such as `Django <http://www.djangoproject.com/>`_ and `TurboGears <http://www.turbogears.org/>`_.
-* High-end solutions such as `Zope <http://www.zope.org/>`_.
-* Advanced content management systems such as `Plone <http://www.plone.org/>`_.
+Pythonは\ `ウェブ開発
+<http://wiki.python.org/moin/WebProgramming>`_\
+においても、幅広い選択肢を提供しています:
 
-For custom web solutions and other internet-based
-applications:
+.. * `Writing basic CGI scripts <http://wiki.python.org/moin/CgiScripts>`_.
+   * Frameworks such as `Django <http://www.djangoproject.com/>`_ and `TurboGears <http://www.turbogears.org/>`_.
+   * High-end solutions such as `Zope <http://www.zope.org/>`_.
+   * Advanced content management systems such as `Plone <http://www.plone.org/>`_.
 
-* Extensive support for `HTML and XML <http://docs.python.org/library/markup>`_.
-* `E-mail processing <http://docs.python.org/library/email>`_.
-* `Processing RSS feeds <http://wiki.python.org/moin/RssLibraries>`_.
-* Support for many other `Internet protocols <http://docs.python.org/library/internet>`_.
+* `基本的なCGIスクリプトを書く <http://wiki.python.org/moin/CgiScripts>`_
+* `Django <http://www.djangoproject.com/>`_\ や\ `TurboGears <http://www.turbogears.org/>`_\ のようなフレームワーク
+* `Zope <http://www.zope.org/>`_\ のようなハイエンドソリューション
+* `Plone <http://www.plone.org/>`_\ のような先進的なコンテンツマネジメントシステム
 
-Database Access
+.. For custom web solutions and other internet-based
+   applications:
+
+カスタムのウェブソリューションや、その他のインターネットベースのアプリケーション:
+
+.. * Extensive support for `HTML and XML <http://docs.python.org/library/markup>`_.
+   * `E-mail processing <http://docs.python.org/library/email>`_.
+   * `Processing RSS feeds <http://wiki.python.org/moin/RssLibraries>`_.
+   * Support for many other `Internet protocols <http://docs.python.org/library/internet>`_.
+
+* `HTMLとXML <http://docs.python.jp/library/markup>`_\ に関するライブラリのサポート
+* `Eメール処理 <http://docs.python.jp/library/email>`_
+* `RSSフィードの処理 <http://wiki.python.org/moin/RssLibraries>`_
+* その他の多くの\ `インターネットプロトコル <http://docs.python.jp/library/internet>`_\ のサポート
+
+.. Database Access
+
+データベースアクセス
+--------------------
+
+.. * `Custom and ODBC interfaces <http://wiki.python.org/moin/DatabaseProgramming/>`_ to MySQL,
+     Oracle, MS SQL Server, PostgreSQL, SybODBC, and others are available
+     for free download.
+   * `Standard Database API <http://www.python.org/dev/peps/pep-0249/>`__.
+   * Object databases such as `ZODB <http://www.zope.org/Wikis/ZODB/FrontPage>`__
+     and `Durus <http://www.mems-exchange.org/software/durus>`__.
+
+* フリーにダウンロードできる、MySQL、Oracle、MS SQL Server、PostgreSQL、SybODBCなどに対する、\ `カスタムおよび、ODBCインタフェース <http://wiki.python.org/moin/DatabaseProgramming/>`_
+* `標準データベース API <http://www.python.org/dev/peps/pep-0249/>`__.
+* `ZODB <http://www.zope.org/Wikis/ZODB/FrontPage>`__\
+  や\ `Durus <http://www.mems-exchange.org/software/durus>`__\ などのオブジェクトデータベース
+
+.. Desktop GUIs
+
+デスクトップGUI
 ---------------
 
-* `Custom and ODBC interfaces <http://wiki.python.org/moin/DatabaseProgramming/>`_ to MySQL,
-  Oracle, MS SQL Server, PostgreSQL, SybODBC, and others are available
-  for free download.
-* `Standard Database API <http://www.python.org/dev/peps/pep-0249/>`__.
-* Object databases such as `ZODB <http://www.zope.org/Wikis/ZODB/FrontPage>`__
-  and `Durus <http://www.mems-exchange.org/software/durus>`__.
+.. * The `Tk <http://wiki.python.org/moin/TkInter>`_ GUI development library
+     is included with most binary distributions for Python.
+   * `wxWidgets <http://www.wxpython.org/>`_
+   * `GTK+ <http://www.pygtk.org/>`_
+   * Qt via `pyqt <http://www.riverbankcomputing.co.uk/software/pyqt/intro>`_ or `pyside <http://www.pyside.org/>`_
+   * Microsoft Foundation Classes through the `win32 extensions <http://sourceforge.net/projects/pywin32/>`_
+   * `Delphi <http://mmm-experts.com/Products.aspx?ProductId=3>`_
 
-Desktop GUIs
-------------
-
-* The `Tk <http://wiki.python.org/moin/TkInter>`_ GUI development library
-  is included with most binary distributions for Python.
-
+* `Tk <http://wiki.python.org/moin/TkInter>`_\ GUI開発ライブラリはほとんどのPythonのバイナリディストリビューションに含まれます
 * `wxWidgets <http://www.wxpython.org/>`_
 * `GTK+ <http://www.pygtk.org/>`_
-* Qt via `pyqt <http://www.riverbankcomputing.co.uk/software/pyqt/intro>`_ or `pyside <http://www.pyside.org/>`_
-* Microsoft Foundation Classes through the `win32 extensions <http://sourceforge.net/projects/pywin32/>`_
+* Qt(`pyqt <http://www.riverbankcomputing.co.uk/software/pyqt/intro>`_\ 、\ `pyside <http://www.pyside.org/>`_)
+* Microsoft Foundation Classes(`win32 extensions <http://sourceforge.net/projects/pywin32/>`_)
 * `Delphi <http://mmm-experts.com/Products.aspx?ProductId=3>`_
 
-Scientific and Numeric
-----------------------
+.. Scientific and Numeric
 
-Python is widely used in `scientific and numeric
-<http://wiki.python.org/moin/NumericAndScientific>`__ computing:
+科学計算・算術計算
+------------------
 
-* `Bioinformatics <http://www.onlamp.com/pub/a/python/2002/10/17/biopython.html>`__
-* `Python course in Bioinformatics <http://www.pasteur.fr/recherche/unites/sis/formation/python/>`_
-* `Physics <http://www.pentangle.net/python/handbook/>`__
+.. Python is widely used in `scientific and numeric
+   <http://wiki.python.org/moin/NumericAndScientific>`__ computing:
 
-Education
+Pythonは\ `科学計算・算術計算
+<http://wiki.python.org/moin/NumericAndScientific>`__\
+の分野で幅広く利用されています。
+
+.. * `Bioinformatics <http://www.onlamp.com/pub/a/python/2002/10/17/biopython.html>`__
+   * `Python course in Bioinformatics <http://www.pasteur.fr/recherche/unites/sis/formation/python/>`_
+   * `Physics <http://www.pentangle.net/python/handbook/>`__
+
+* `バイオインフォマティクス <http://www.onlamp.com/pub/a/python/2002/10/17/biopython.html>`__
+* `バイオインフォマティクス内のPythonのコース <http://www.pasteur.fr/recherche/unites/sis/formation/python/>`_
+* `物理 <http://www.pentangle.net/python/handbook/>`__
+
+.. Education
+
+教育
 ---------
 
-Python is a superb language for teaching programming, both at the introductory
-level and for more advanced courses.
+.. Python is a superb language for teaching programming, both at the introductory
+   level and for more advanced courses.
 
-* `Education Special Interest Group </community/sigs/current/edu-sig>`__ is a good place to start.
-* `pyBiblio <http://www.ibiblio.org/obp/pyBiblio/>`__ links to many different resources.
-* The `Software Carpentry Course <http://www.swc.scipy.org/>`__, funded
-  by the `Python Software Foundation </psf>`__.
+Pythonは、入門レベルから上級のコースまで、プログラミングを教えるには最高の言語です。
 
-Network Programming
--------------------
+.. * `Education Special Interest Group </community/sigs/current/edu-sig>`__ is a good place to start.
+   * `pyBiblio <http://www.ibiblio.org/obp/pyBiblio/>`__ links to many different resources.
+   * The `Software Carpentry Course <http://www.swc.scipy.org/>`__, funded
+     by the `Python Software Foundation </psf>`__.
 
-In addition to the web and internet support described above, Python also
-provides support for lower level network programming:
+* `教育に関するSIG(Special Interest Group) </community/sigs/current/edu-sig>`__\ は良い出発点です
+* `pyBiblio <http://www.ibiblio.org/obp/pyBiblio/>`__\ にはさまざまな教育関連のリソースがリンクされています
+* `Software Carpentry Course <http://www.swc.scipy.org/>`__\ は、\ `Pythonソフトウェア財団 </psf>`__\ の出資を受けています。
 
-* Easy-to-use `socket interface <http://docs.python.org/howto/sockets.html>`__.
-* `Twisted Python <http://twistedmatrix.com/trac/>`__, a framework for
-  asynchronous network programming.
+.. Network Programming
 
-Software Development
+ネットワークプログラミング
+--------------------------
+
+.. In addition to the web and internet support described above, Python also
+   provides support for lower level network programming:
+
+上記で説明したウェブやインターネットのサポート以外にも、Pythonでは低レベルのネットワークプログラミングもサポートしています:
+
+.. * Easy-to-use `socket interface <http://docs.python.org/howto/sockets.html>`__.
+   * `Twisted Python <http://twistedmatrix.com/trac/>`__, a framework for
+     asynchronous network programming.
+
+* 簡単につかえる\ `ソケットインタフェース <http://docs.python.org/howto/sockets.html>`__
+* 非同期ネットワークプログラミングのフレームワークの\ `Twisted Python <http://twistedmatrix.com/trac/>`__
+
+.. Software Development
+
+ソフトウェア開発
 --------------------
 
 .. sidebar:: |Development Environments for Python|
-   :subtitle: Development Environments for Python
+   :subtitle: Pythonのソフトウェア開発環境
+   
+   .. Development Environments for Python
 
-   Check out these screencasts for an introduction to the capabilities of a
-   few of the many IDEs available for Python.  How many you ask?  Take a look
-   at the `roster of IDEs for Python`_.
+   .. Check out these screencasts for an introduction to the capabilities of a
+      few of the many IDEs available for Python.  How many you ask?  Take a look
+      at the `roster of IDEs for Python`_.
+
+   これらのスクリーンキャストを見ると、Pythonで利用可能な数多くのIDEのうちのいくつかの機能が分かるでしょう。\
+   Pythonでどれくらいの開発環境があるかは、\ `PythonのためのIDEのリスト`_.
 
     + `Using Wing IDE Professional <http://showmedo.com/videos/video?name=pythonOzsvaldWingIDEIntro&fromSeriesID=21>`__
     + `Introduction to Komodo IDE <http://community.activestate.com/screencast/1083>`__
@@ -116,24 +191,39 @@ Software Development
 
 .. |Development Environments for Python| image:: /images/python-video-icon.png
 
-Python is often used as a support language for software developers,
-for build control and management, testing, and in many other ways.
+.. Python is often used as a support language for software developers,
+   for build control and management, testing, and in many other ways.
+
+Pythonはよく、ソフトウェア開発のためのサポート言語や、ビルドの管理、テストなどのためのツールとしても使われます。
+
+.. * `SCons <http://www.scons.org/>`__ for build control.
+   * `Buildbot <http://buildbot.sourceforge.net/>`__ and `Apache Gump <http://gump.apache.org/>`__ for automated continuous compilation and testing.
+   * `Roundup <http://roundup.sourceforge.net/>`_ or `Trac <http://www.edgewall.com/trac/>`__ for bug tracking and project management.
+   * `Roster of Integrated Development Environments`_
 
 * `SCons <http://www.scons.org/>`__ for build control.
-* `Buildbot <http://buildbot.sourceforge.net/>`__ and `Apache Gump <http://gump.apache.org/>`__ for automated continuous compilation and testing.
-* `Roundup <http://roundup.sourceforge.net/>`_ or `Trac <http://www.edgewall.com/trac/>`__ for bug tracking and project management.
-* `Roster of Integrated Development Environments`_.
+* 継続的自動コンパイルとテスト: `Buildbot <http://buildbot.sourceforge.net/>`__\ 、\ `Apache Gump <http://gump.apache.org/>`__
+* バグトラッキングとプロジェクト管理: `Roundup <http://roundup.sourceforge.net/>`_\ 、\ `Trac <http://www.edgewall.com/trac/>`__
+* `PythonのためのIDEのリスト`_
 
-.. _`Roster of Integrated Development Environments`: http://wiki.python.org/moin/IntegratedDevelopmentEnvironments
-.. _`roster of IDEs for Python`: http://wiki.python.org/moin/IntegratedDevelopmentEnvironments
+.. _`PythonのためのIDEのリスト`: http://wiki.python.org/moin/IntegratedDevelopmentEnvironments
 
-Game and 3D Graphics
---------------------
+.. Game and 3D Graphics
 
-Python is widely used in commercial and hobby game development:
+ゲームと3Dグラフィックス
+------------------------
 
-* A partial list of games is on the `Python Games <http://wiki.python.org/moin/PythonGames>`__ wiki page. 
-* `PyGame <http://www.pygame.org/news.html>`__ and `PyKyra <http://www.alobbs.com/pykyra>`__ are two of the game frameworks available for Python.
-* List of `3D rendering libraries <http://www.vrplumber.com/py3d.py>`__ available for Python.
-* `PyWeek <http://www.pyweek.org>`__ is a semi-annual game programming contest.
+.. Python is widely used in commercial and hobby game development:
+
+Pythonは、市販のゲーム開発から、趣味のゲーム開発まで、幅広く利用されています。
+
+.. * A partial list of games is on the `Python Games <http://wiki.python.org/moin/PythonGames>`__ wiki page. 
+   * `PyGame <http://www.pygame.org/news.html>`__ and `PyKyra <http://www.alobbs.com/pykyra>`__ are two of the game frameworks available for Python.
+   * List of `3D rendering libraries <http://www.vrplumber.com/py3d.py>`__ available for Python.
+   * `PyWeek <http://www.pyweek.org>`__ is a semi-annual game programming contest.
+
+* ゲームの一部のリストが\ `Python Games <http://wiki.python.org/moin/PythonGames>`__\ Wikiページにあります
+* Pythonで利用可能なゲームフレームワーク: `PyGame <http://www.pygame.org/news.html>`__\ 、\ `PyKyra <http://www.alobbs.com/pykyra>`__
+* Pythonで利用可能な\ `3Dレンダリングライブラリ <http://www.vrplumber.com/py3d.py>`__
+* `PyWeek <http://www.pyweek.org>`__\ では半年に1回、ゲームプログラミングコンテストを行なっています
 
