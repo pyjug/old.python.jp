@@ -1,45 +1,32 @@
 Content-type: text/x-rst
-Title: About the Python Web Site
+Title: Python Japanのウェブサイトについて
 
-About the Python Web Site
-=========================
-
-
-Web site design by `Tim Parkin <http://www.timparkin.co.uk/>`_.
-
-Web site and e-mail hosting provided by `XS4ALL, Netherlands <http://www.xs4all.nl>`_.
-
-`Use the Python logo </community/logos/>`__ on your own pages.
+Python Japanのウェブサイトについて
+==================================
 
 
-Reporting Problems
-------------------
+ウェブサイトのデザインはpython.orgの `Tim Parkin <http://www.timparkin.co.uk/>`_ さんのものを使っています。
 
-To report a bug or to suggest an enhancement, send an e-mail to
-<webmaster@python.org>.
+ウェブサイトの問題を報告する
+------------------------------
 
-If you're reporting a problem (a broken link, typo, formatting
-glitch, etc), please include the URL of the affected page.
+バグや改善案は<webmaster@python.jp>に送ってください。
 
-Note that this address is only for problems with the main
-`python.org` website. For problems with `PyPI` please use the
-`PyPI bug tracker 
-<http://sourceforge.net/tracker/?group_id=66150&atid=513503>`_.
+リンク切れやスペルミス、フォーマットに関する不具合などの問題を報告するときには問題の起きているページのURLを教えてください。
 
+このアドレスはPython Japanのウェブサイトに関する問題のみを受け付けています。Pythonプログラムのバグなどの問題は扱っていません。注意してください。
 
-Joining the python.org Team
----------------------------
+python.jpのメンテナンスを手伝う
+--------------------------------------
 
-This website is maintained by volunteers 
-from the `Python community </community>`_.
+このウェブサイトは日本のPythonユーザー達のボランティアで運営されています。
 
-If you wish to join the volunteer group:
+このウェブサイトのメンテナンスを手伝うなら:
 
-* Join the `pydotorg-www`_ mailing list.
+* `pyjug-renewal Googleグループ`_ に参加する。
  
-* Read the `maintenance instructions </dev/pydotorg/website>`__
+* `メンテナンス手引き </pyjug/maintenance>`__ を読む。
 
-.. _pydotorg-www: http://mail.python.org/mailman/listinfo/pydotorg-www
-
+.. _pyjug-renewal Googleグループ: http://groups.google.com/group/pyjug-renewal
 
 
