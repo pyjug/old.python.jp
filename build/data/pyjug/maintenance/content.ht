@@ -1,0 +1,43 @@
+Content-type: text/x-rst
+Title: python.jpのメンテナンス手引き
+
+python.jpのメンテナンス手引き
+==================================
+
+python.jpはpython.orgのウェブサイトをメンテナンスするために使われているのと同じ道具を使って作られています。以下にpython.jpをメンテナンスするのに必要なその道具のセットアップ方法と簡単な使い方を説明します。
+
+python.jpのデータをダウンロードする
+-------------------------------------------
+
+`Gitレポジトリ`_ からデータを取得します。
+
+
+自分のコンピュータでpython.jpを動かす
+-------------------------------------------
+
+次の3つのパッケージが必要です::
+
+  easy_install mako
+  easy_install pyyaml
+  easy_install docutils
+
+サイトをビルドします::
+
+  make new
+
+内蔵のウェブサーバーが使えます::
+
+  make start
+  make stop
+
+詳細はbuild/READMEを読んでください。
+
+
+ページを追加更新したら変更をマージする
+-----------------------------------------------------------
+Githubのpull requestをするなりしてパッチをください。マージします。
+
+
+.. _Gitレポジトリ: https://github.com/atsuoishimoto/new.python.jp
+
+
