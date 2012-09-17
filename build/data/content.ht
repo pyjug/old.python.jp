@@ -9,9 +9,9 @@ Content-type: text/x-rst
 Template: homepage
 Nav:
     Pythonとは {プログラミング言語 Pythonとは} about/
-    News {最近のできごと} news/
+    ニュース {最近のできごと} news/
     ドキュメント {チュートリアル、 ライブラリ リファレンス、 C API} doc/
-    ダウンロード {Start Running Python Under Windows, Mac, Linux and Others} download/
+    ダウンロード {Start Running Python Under Windows, Mac, Linux and Others} http://www.python.org/download/
     コミュニティ {メーリングリスト、 イベントなど} community/
     PyJUGについて {日本Pythonユーザ会について} pyjug/
 Quick-links:

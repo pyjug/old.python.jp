@@ -1,10 +1,8 @@
 Content-type: text/x-rst
 Title: About
 Nav: 
-        Getting Started gettingstarted
-        Applications apps
-        Success Stories success
-        Quotes quotes
+        Pythonを始めよう gettingstarted
+        アプリケーション apps
         Website website
         Help help
 
