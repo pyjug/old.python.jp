@@ -11,8 +11,7 @@ Nav:
     Pythonとは {プログラミング言語 Pythonとは} about/
     ニュース {最近のできごと} news/
     ドキュメント {チュートリアル、 ライブラリ リファレンス、 C API} doc/
-    ダウンロード {Start Running Python Under Windows, Mac, Linux and Others} http://www.python.org/download/
-    コミュニティ {メーリングリスト、 イベントなど} community/
+    ダウンロード {Pythonをダウンロード} download/
     PyJUGについて {日本Pythonユーザ会について} pyjug/
 Quick-links:
     公式ウェブサイト {Python Programming Language Official Website} http://www.python.org
