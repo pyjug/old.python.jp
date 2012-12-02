@@ -1,8 +1,8 @@
 Title: Pythonニュース
 Template: news-archive
 Content-type: text/x-rst
-Nav: 
-        Security Advisories security
+.. Nav: 
+..         Security Advisories security
 
 Pythonニュース
 -----------------------------------
