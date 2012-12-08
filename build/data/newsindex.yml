@@ -13,4 +13,39 @@ global:
     pubDate: Sun, 12 Aug 2012, 17:00 +0200
     title: "Python 3.3.0 β2 リリース"
     description: !rest "Python 3.3.0 β2が `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"
-
+   -
+    pubDate: Mon, 24 Sep 2012, 08:00 +0200
+    title: "Python 3.3.0 RC3 リリース"
+    description: !rest "Python 3.3.0 RC3が テストのために `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"
+   -
+    pubDate: Fri, 14 Sep 2012, 00:45 +0100
+    title: "Python Software Foundationが特別功労賞を発表"
+    description: !rest "Python Software Foundationが `特別功労賞 <http://python.org/community/awards/psf-distinguished-awards/>`__ の創設を発表。最初の受賞は亡くなられた `John Hunter <http://www.numfocus.org/johnhunter>`__ に贈られました。"
+   -
+    pubDate: Tue, 11 Sep 2012, 00:45 +0100
+    title: "ConFoo conference in Canada 2月25日 - 3月13日"
+    description: !rest " `CanFoo <http://confoo.ca/>`__ はカナダで2月25日から3月13日まで行われるweb開発に特化した複合技術カンファレンスです。私たちはPythonの発表者を探し、CFPとして募集しています。"
+   -
+    pubDate: Sun, 9 Sep 2012, 12:00 +0200
+    title: "Python 3.3.0 RC2 リリース"
+    description: !rest "Python 3.3.0 RC2が テストのために `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"
+   -
+    pubDate: Sat, 24 Aug 2012, 22:00 +0200
+    title: "Python 3.3.0 RC1 リリース"
+    description: !rest "Python 3.3.0 RC1が テストのために `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"
+   -
+    pubDate: Sun, 12 Aug 2012, 10:45 -0500
+    title: "第5回年次pyArkansasカンファレンスが開催される"
+    description: !rest "第5回年次pyArkansasカンファレンスが2012年10月27日ConwayのArkansasで開催されます。詳細は `http://www.pyarkansas.org/ <http://www.pyarkansas.org>`__ を御覧ください。"
+   -
+    pubDate: Sun, 12 Aug 2012, 17:00 +0200
+    title: "Python 3.3.0 β2 リリース"
+    description: !rest "Python 3.3.0 β2が テストのために `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"
+   -
+    pubDate: Wed, 27 Jun 2012, 08:00 +0200
+    title: "Python 3.3.0 β1 リリース"
+    description: !rest "Python 3.3.0 β1が テストのために `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"
+   -
+    pubDate: Thu, 31 May 2012, 22:00 +0200
+    title: "Python 3.3.0 α4 リリース"
+    description: !rest "Python 3.3.0 α4が テストのために `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"
