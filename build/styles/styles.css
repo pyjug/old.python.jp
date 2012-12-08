@@ -3,7 +3,7 @@ HTML, BODY
 {
   margin: 0;
   padding: 0;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif; */
   font-size: 103%;
   /* possibly both of these should be removed */
   color: #000;
@@ -16,7 +16,7 @@ IMG
 }
 
 H1,H2,H3,H4,H5 {
-  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;
+/*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif; */
   font-weight:normal;
   line-height: 1em;
 }
@@ -102,7 +102,7 @@ H4
 
   padding: 0 0.55em 40px 0.0em;
   line-height: 1.4em;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif; */
   margin-left: 19em;
 }
 
@@ -151,13 +151,13 @@ H4
   margin: 0 0 4px 1.4em;
   width: 12em !important;
   width /**/: 13.4em;
-  font-family: Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif; */
   color: #4B5A6A;
   background-image: url(../images/nav-off-bg.png);
   background-position: top right;
   background-repeat: no-repeat;
   background-color:#F5F5F5;
-  text-transform: uppercase
+/*  text-transform: uppercase*/
   
 }
 
@@ -201,7 +201,7 @@ H4
   background: none;
   width: 11em !important;
   width /**/: 11.2em;  
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif; */
   text-transform: none;
 }
 
@@ -249,7 +249,7 @@ H4
   background-image: none;
   width: 10em !important;
   width /**/: 11.4em;  
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size: 95%;
 }
 
@@ -276,7 +276,7 @@ margin-top:5px;
 
 #left-hand-navigation h4
 {
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size: 77%;
   color: #4C5B6B;
   padding: 0.4em 0 0 1.5em;
@@ -363,7 +363,7 @@ margin-top:5px;
   width:400px;
   z-index: 1;
   font-size: 88%;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif; */
 }
 
 #utility-menu a
@@ -426,7 +426,7 @@ margin-top:5px;
 #search .input-button
 {
   color: #223344;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-weight: bold;
   font-size: 103%;
   border-top: 1px solid #C4CCCC;
@@ -451,7 +451,7 @@ margin-top:5px;
 /* Document Navigation */
 .homepage-box h4, #document-navigation h4, .externallinks h4
 {
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size: 94%;
   font-weight: bold;
   padding: 3px 0 4px 12px;
@@ -465,7 +465,7 @@ margin-top:5px;
 
 #document-navigation
 {
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size:  98%;
   text-align: left;
   color: #3C4B6B;
@@ -492,7 +492,7 @@ margin-top:5px;
   background: none;
   width: auto;
   font-size: 103%;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif; 
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif; */
 }
 
 #document-navigation a:link, #document-navigation a:visited 
@@ -526,7 +526,7 @@ margin-top:5px;
 }
 input.formbutton {
   color: #223344;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-weight: bold;
   font-size: 103%;
   border-top: 1px solid #C4CCCC;
@@ -689,7 +689,7 @@ ul.quicklinks li
   background-image: url(../images/bullet.gif);
   background-repeat: no-repeat;
   background-position: 0 50%;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size: 77%;
 }
 
@@ -808,7 +808,7 @@ P.news A:visited
 /* Document Navigation */
 #document-navigation h4, .homepage-box h4, .externallinks h4
 {
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size: 94%;
   font-weight: bold;
   padding: 3px 0 4px 12px;
@@ -880,7 +880,7 @@ P.news A:visited
 
 #homepage-boxes .homepage-box, .externallinks
 {
-  font-family: Arial, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size:  98%;
   text-align: left;
   color: #3C4B6B;
@@ -907,7 +907,7 @@ P.news A:visited
   color: #3C4B6B;
   background: none;
   width: auto;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size: 103%;
   margin-left:0;
 }
@@ -1119,7 +1119,7 @@ display:none;
   font-size:70%;
   margin:8px 0 0 0 ;
   padding:0;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size: 103%;
 }
 
@@ -1207,7 +1207,7 @@ iframe {
 /* For Meeting Minutes */
 .minutes-title {
   text-align: center;
-  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;
+/*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif;*/
   font-size: 160%;
   font-weight: bold;
   line-height: 120%;
@@ -1237,7 +1237,7 @@ th.field-name {
 
 #applications h5 {
   margin:0;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   font-size: 103%;
   margin: 0 0 0.2em 1em;
   font-weight:bold;
@@ -1253,7 +1253,7 @@ th.field-name {
   font-size: 85%;
   width:100%;
   margin: 0 0 0.5em 0.5em;
-  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;
+/*  font-family: Arial, Verdana, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/
   padding:0;
 }
 
