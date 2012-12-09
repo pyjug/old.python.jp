@@ -6,14 +6,6 @@ template: newsindex.html
 global:
   news:
    -
-    pubDate: Sun, 14 Aug 2012, 17:00 +0900
-    title: "PyCon JP 支払い時のPayPalエラー解消"
-    description: !rest "`PyCon JP 2012 <http://2012.pycon.jp>`__ の参加申し込みの際、これまでPayPalでエラーが発生していた方でも `正常にお支払い頂けるようになりました <http://connpass.com/event/708/>`__ 。"
-   -
-    pubDate: Sun, 12 Aug 2012, 17:00 +0200
-    title: "Python 3.3.0 β2 リリース"
-    description: !rest "Python 3.3.0 β2が `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"
-   -
     pubDate: Mon, 24 Sep 2012, 08:00 +0200
     title: "Python 3.3.0 RC3 リリース"
     description: !rest "Python 3.3.0 RC3が テストのために `リリース <http://www.python.org/download/releases/3.3.0/>`__ されました。"

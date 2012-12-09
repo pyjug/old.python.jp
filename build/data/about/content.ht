@@ -16,7 +16,7 @@ Pythonとは
    compared to Tcl, Perl, Ruby, Scheme or Java. Some of its key distinguishing
    features include:
 
-Pythonはさまざまな分野の\ `アプリケーション </about/apps>`__\ で使われている、極めてパワフルな動的プログラミング言語です。\
+Pythonはさまざまな分野のアプリケーションで使われている、極めてパワフルな動的プログラミング言語です。\
 Pythonはよく、Tcl、Perl、Scheme、Javaなどと比較されます。\
 Pythonには次のような特徴があります:
 
@@ -60,12 +60,12 @@ Pythonはパワフル・・・そして高速
    `duck typing <http://en.wikipedia.org/wiki/Duck_typing>`_ and
    `decorators </dev/peps/pep-0318/>`_. 
 
-Pythonファンはよく、非同期プロセスからzipファイルの圧縮展開までこなす\ `標準ライブラリ <http://docs.python.org/library/>`_\
+Pythonファンはよく、非同期プロセスからzipファイルの圧縮展開までこなす\ `標準ライブラリ <http://docs.python.jp/2/library/>`_\
 を説明するのに、「バッテリー同梱(batteries included)」というフレーズを良く使います。\
-言語そのものも、さまざまな\ `問題ドメイン </about/apps>`__\ を実用的に扱えるほど、柔軟な言語になっています。\
-3行で自分のウェブサーバを構築することもできます。Pythonの強力な動的内省機能と、\ `メタクラス <http://www.onlamp.com/pub/a/python/2003/04/17/metaclasses.html>`_\ 、\
+言語そのものも、さまざまな\ `問題ドメイン <http://www.python.org/about/apps>`__\ を実用的に扱えるほど、柔軟な言語になっています。\
+3行で自分のウェブサーバを構築することもできます。Pythonの強力な動的内省機能と、メタクラス、\
 `ダック・タイピング <http://ja.wikipedia.org/wiki/%E3%83%80%E3%83%83%E3%82%AF%E3%83%BB%E3%82%BF%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0>`_\ 、\
-`デコレータ </dev/peps/pep-0318/>`_\ などの上級向けの機能を使うことで、柔軟なデータ駆動のコードを作成することもできます。
+`デコレータ <http://www.python.org/dev/peps/pep-0318/>`_\ などの上級向けの機能を使うことで、柔軟なデータ駆動のコードを作成することもできます。
 
 .. Python lets you write the code you need, quickly. And, thanks to a highly
    optimized byte compiler and support libraries, Python code runs more than 
@@ -122,10 +122,10 @@ Pythonは\ `インターネット・コミュニケーション・エンジン(I
    own application, providing your users with a language they'll enjoy
    using. 
 
-もし、Pythonでできないことを、もしくは低レベルコードの高速性が必要になった場合は、C/C++で\ `拡張モジュール <http://www.python.org/doc/ext/intro.html>`_\
+もし、Pythonでできないことを、もしくは低レベルコードの高速性が必要になった場合は、C/C++で\ `拡張モジュール <http://docs.python.jp/2/extending/extending.html>`_\
 を作成したり、既存のコードを\ `SWIG <http://www.swig.org/>`_\ や\ `Boost.Python <http://www.boost.org/libs/python/doc/>`_\ を使ってラップすることができます。\
 ラップされたモジュールはネイティブのPythonコードと同じように、プログラムの中から利用することができます。言語への組み込みが簡単なように作られています。\
-これとは反対方向になりますが、アプリケーションの中に\ `Pythonを組み込んで <http://docs.python.org/extending/embedding.html>`_\
+これとは反対方向になりますが、アプリケーションの中に\ `Pythonを組み込んで <http://docs.python.jp/2/extending/embedding.html>`_\
 アプリケーションのユーザにPythonを使って楽しんでもらうこともできます。
 
 .. Python runs everywhere
@@ -164,8 +164,8 @@ Pythonはフレンドリー、そして学習しやすい
    `conferences </community/workshops>`_, runs development sprints, 
    and contributes to online code repositories.
 
-Pythonのニューズグループは、もっともフレンドリーなグループとして知られています。熱心な開発者やユーザ\ `コミュニティ </community>`_\ が、\
-`wiki <http://wiki.python.org/moin/>`_\ をメンテナンスしていたり、国際的なものからローカルなものまでさまざまな\ `カンファレンス </community/workshops>`_\
+Pythonのニューズグループは、もっともフレンドリーなグループとして知られています。熱心な開発者やユーザ\ `コミュニティ <http://www.python.org/community>`_\ が、\
+`wiki <http://wiki.python.org/moin/>`_\ をメンテナンスしていたり、国際的なものからローカルなものまでさまざまな\ `カンファレンス <http://www.python.org/community/workshops>`_\
 を運営していたり、開発スプリントを行なっていたり、オンラインのコードリポジトリに貢献しています。
 
 .. Python also comes with complete `documentation </doc>`_, both integrated into
@@ -177,7 +177,7 @@ Pythonのニューズグループは、もっともフレンドリーなグル�
    first-rate `books <http://wiki.python.org/moin/PythonBooks>`_ completes
    the learning package.
 
-Pythonは完全な\ `ドキュメント </doc>`_\を提供しています。言語に組み込みのドキュメントと、ウェブページとして提供しているものがあります。\
+Pythonは完全な\ `ドキュメント <http://docs.python.jp/>`_\ を提供しています。言語に組み込みのドキュメントと、ウェブページとして提供しているものがあります。\
 また、\ `既存の言語ユーザ向けのオンラインチュートリアル <http://wiki.python.org/moin/BeginnersGuide/Programmers>`_\ と、\
 `完全に新しくプログラミングをはじめるユーザ向けのオンラインチュートリアル <http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_\
 も提供しています。どのドキュメントも、生産性をすばやく上げられるようにデザインされています。また、さまざまな一級の\ `書籍 <http://wiki.python.org/moin/PythonBooks>`_\
@@ -193,10 +193,10 @@ Pythonはオープン
    The `Python license </psf/license/>`__ is administered by the `Python Software Foundation </psf/>`__.
 
 Pythonの実装は\ **自由に使用でき、自由に配布でき、商用利用も可能な**\ オープンソースライセンスで提供されています。\
-`Pythonライセンス </psf/license/>`__\ は\ `Pythonソフトウェア財団 </psf/>`__\ が管理しています。
+`Pythonライセンス <http://www.python.org/psf/license/>`__\ は\ `Pythonソフトウェア財団 <http://www.python.org/psf/>`__\ が管理しています。
 
 .. Take a look at `application domains </about/apps>`__ where Python is used, or
    try the `current download </download/>`__ for yourself.
 
-ぜひ、どの\ `アプリケーションの分野 </about/apps>`__\ でPythonが利用されているのかを見て、自分自身でも\ `最新版をダウンロード </download/>`__\
+ぜひ、どの\ `アプリケーションの分野 <http://www.python.org/about/apps>`__\ でPythonが利用されているのかを見て、自分自身でも\ `最新版をダウンロード <http://www.python.org/download/>`__\
 して試してみてください。

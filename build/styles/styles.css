@@ -1419,3 +1419,8 @@ p.sidebar-subtitle {
 .align-right {
   margin-left: 1em;
 }
+
+#content dd {
+  margin-bottom: 1em;
+}
+
