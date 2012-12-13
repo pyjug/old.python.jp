@@ -7,6 +7,7 @@ PYTHON = python
 
 new:
 	$(PYTHON) new-build/build.py --cache=pydotorg.cache -v -d data -o out -r images,styles,files,js
+	cp out/news/rdf/index.html out/channews.rdf
 
 all: new
 
