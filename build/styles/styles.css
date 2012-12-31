@@ -878,6 +878,18 @@ P.news A:visited
   margin: 0 0 6px 30px;
 }
 
+#homepage-boxes .homepage-box h5 {
+    margin: 0.5em;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+#homepage-boxes .homepage-box p {
+    margin: 0.5em 0.5em 0.5em 1.0em;
+    font-size: 75%;
+}
+
+
 #homepage-boxes .homepage-box, .externallinks
 {
 /*  font-family: Arial, Geneva, "Bitstream Vera Sans", Helvetica, sans-serif;*/

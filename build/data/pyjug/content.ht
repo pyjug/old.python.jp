@@ -4,8 +4,7 @@ Title: PYJUGについて
 PyJUGについて
 ==================================
 
-
-日本Pythonユーザ会 (Python Japan User's Group:PyJUG) は、Pythonの普及と発展を目的とする非営利団体です。
+日本Pythonユーザ会 (Python Japan User's Group:PyJUG) は、`プログラミング言語Python <http://www.python.org>`_ の普及と発展を目的とする非営利団体です。
 
 理事会
 ------------
@@ -18,10 +17,11 @@ PyJUGについて
 お問い合わせ等
 -------------------
 
+- Pythonプログラミングに関するご質問などは、`Python日本語メーリングリスト <http://www.python.jp/mailman/listinfo/python-ml-jp>`_ をご利用ください。
 
-日本Pythonユーザ会へのお問い合わせや、イベント告知掲載のご依頼等は、 pyjug@python.jp までご連絡ください。
+- 日本Pythonユーザ会へのお問い合わせや、イベント告知掲載のご依頼等は、 pyjug@python.jp までご連絡ください。
 
-http://www.python.jp サイトの不具合報告や、情報の掲載依頼等は、 `githubのPyJUGコミュニティ <https://github.com/organizations/pyjug/dashboard/issues>`_ でもご連絡いただけます。
+- http://www.python.jp サイトの不具合報告や、情報の掲載依頼等は、 `githubのPyJUGコミュニティ <https://github.com/organizations/pyjug/dashboard/issues>`_ でもご連絡いただけます。
 
 
 コミュニティ
@@ -37,6 +37,6 @@ http://www.python.jp サイトの不具合報告や、情報の掲載依頼等�
 その他
 ---------------------
 
-* `python.jp メンテナンス手引き </pyjug/maintenance>`__ を読む。
+* `python.jp メンテナンスの手引き </pyjug/maintenance>`__ 
 
 
