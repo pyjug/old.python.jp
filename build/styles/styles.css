@@ -20,7 +20,7 @@ H1,H2,H3,H4,H5 {
 /*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif; */
   font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Arial, sans-serif;
   font-weight:normal;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
 H1
@@ -43,7 +43,7 @@ H2
   font-size: 140%;
 
   color: #366D9C;
-  margin: 0.7em 0 0.7em 0;
+  margin: 1.5em 0 0.0em 0;
 }
 
 H3
@@ -1265,7 +1265,13 @@ iframe {
 th.field-name {
   text-align: left;
   padding-right: 0.5em;
+  white-space: nowrap;
 }
+
+.field-body p.first {
+    margin-top: 0;
+}
+
 
 #applications h5 {
   margin:0;
