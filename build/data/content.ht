@@ -12,6 +12,7 @@ Nav:
     ニュース {最近のできごと} news/
     ドキュメント {チュートリアル、 ライブラリ リファレンス、 C API} doc/
     ダウンロード {Pythonをダウンロード} download/
+    イベント {Pythonのイベント} event/
     PyJUGについて {日本Pythonユーザ会について} pyjug/
 Quick-links:
     公式ウェブサイト {Python Programming Language Official Website} http://www.python.org

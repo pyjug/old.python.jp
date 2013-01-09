@@ -155,6 +155,34 @@ def read_news ():
 
     return result
 
+def read_event ():
+    """Read the newsindex.yml file, returning a list of dictionaries
+       that contain information about each news item.
+    """
+
+    input = open(os.path.join(options.data, 'eventindex.yml'), 'r')
+    data = yaml.load(input, pyramid_yaml.PyramidLoader)
+    input.close()
+    result = []
+    for mapping_node in data.globals['news']:
+        d = {}
+        L = list(mapping_node.value)
+        for key_node, value_node in L:
+            key = key_node.value
+            item_html = value_node.value
+
+            if key == 'description':
+                item_html = rst_html.process_rst('newsindex.yml', item_html)
+                item_html = item_html.strip()
+
+                if item_html.startswith('<p>'): item_html = item_html[3:]
+                if item_html.endswith('<p>'): item_html = item_html[:-3]
+
+            d[key_node.value] = item_html
+        result.append(d)
+
+    return result
+
 def read_sigs ():
     """Read the sigindex.yml file, returning a list of dictionaries
        that contain information about each SIG.
@@ -584,6 +612,7 @@ def rebuild_directory (dirpath, filenames):
     log(' Output will be written to %s', output_path, level=3)
 
     kw = {'rss':read_rss, 'random':choose_random, 'read_news':read_news,
+          'read_event':read_event,
           'read_sigs':read_sigs, 'read_retired_sigs':read_retired_sigs,
           'anchorify':anchorify}
 

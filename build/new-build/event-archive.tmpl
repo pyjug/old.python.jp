@@ -1,0 +1,14 @@
+<%inherit file="pydotorg.tmpl"/>
+
+<%def name="content()">
+        ${parent.content()}
+
+        <div id="newsindex" class="news-section">
+	    <% news_items = read_event() %>
+	    %for item in news_items[:20]:
+	      <h2 class="news">${item['title']}</h2>
+		${item['description']}
+	      <div class="pubdate">Published: ${item['pubDate']}</div>
+	    %endfor
+        </div>
+</%def>
