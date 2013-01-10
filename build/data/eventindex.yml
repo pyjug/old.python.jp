@@ -8,4 +8,4 @@ global:
    -
     pubDate: Wed, 29 Jan 2012, 18:00 +0900
     title: "Tokyo.Scipy #5 1月26日"
-    description: !rest " `Tokyo.SciPy #5 <http://partake.in/events/0e56cd0a-c28c-45f6-b91b-f90e92272c48>`__ は科学技術計算で Python を利用するための勉強会です。Tokyo.Scipyについての詳細は `Tokyo.SciPy <https://github.com/tokyo-scipy/archive>`__ を御覧ください。"
+    description: !rest " `Tokyo.SciPy #5 <https://github.com/tokyo-scipy/archive/tree/master/005>`__ は科学技術計算で Python を利用するための勉強会です。Tokyo.Scipyについての詳細は `Tokyo.SciPy <https://github.com/tokyo-scipy/archive>`__ を御覧ください。"
