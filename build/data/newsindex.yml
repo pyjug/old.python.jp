@@ -6,6 +6,10 @@ template: newsindex.html
 global:
   news:
    -
+    pubDate: Sun, 13 Jan 2013, 18:00 +0900
+    title: "Tokyo.Scipy #5 1月26日に開催"
+    description: !rest "科学技術計算に Python を利用するための勉強会 `Tokyo.SciPy #5 <https://github.com/tokyo-scipy/archive/tree/master/005>`__ が、1月26日に開催されます。詳細は `Tokyo.SciPy <https://github.com/tokyo-scipy/archive>`__ を御覧ください。"
+   -
     pubDate: Sat, 29 Sep 2012, 18:00 +0200
     title: "Python 3.3.0 リリース"
     description: !rest "Python 3.3.0 が `リリース <http://python.org/download/releases/3.3.0/>`__ されました。"
