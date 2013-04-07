@@ -83,7 +83,7 @@ from mako.lookup import TemplateLookup
 pdo_lookup = TemplateLookup(
     directories=[prog_dir, os.path.join(prog_dir, 'fragments')],
     input_encoding='utf-8',
-    module_directory='/tmp/mako',
+    module_directory='/tmp/mako.python.jp',
     default_filters=['decode.utf8'])
 
 def read_template (fn):
