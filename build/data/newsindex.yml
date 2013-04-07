@@ -6,6 +6,23 @@ template: newsindex.html
 global:
   news:
    -
+    pubDate: Sun, 7 April 2013, 12:00 +0900
+    title: "Python 2.7.4 / 3.2.4 / 3.3.1 リリース"
+    description: |
+            3つのメジャーバージョン Python 2.7、Python 3.2、 Python 3.3 のバグフィックスリリースである、 `Python 2.7.4 <http://www.python.org/download/releases/2.7.4/>`__ 、 `Python 3.2.4 <http://www.python.org/download/releases/3.2.4/>`__、 `Python 3.3.1 <http://www.python.org/download/releases/3.3.1/>`__ がリリースされました。
+
+            - `Python 3.3.1 の更新履歴 <http://hg.python.org/cpython/file/v3.3.1/Misc/NEWS>`__
+
+              `Python 3.3.1 <http://www.python.org/download/releases/3.3.1/>`__ はPython 3.3 系列で最初のバグフィクスリリースで、数百件のBug修正が取り込まれています。
+
+            - `Python 3.2.4 の更新履歴 <http://hg.python.org/cpython/file/v3.2.4/Misc/NEWS>`__
+
+              `Python 3.2.4 <http://www.python.org/download/releases/3.2.4/>`__ は Python 3.2 系列で最後のバイナリリリースとなります。今後、2016年2月までは、セキュリティ上の問題に対処するためのソースコード版のみがリリースされます。
+
+            - `Python 2.7.4 の更新履歴 <http://hg.python.org/cpython/file/v2.7.4/Misc/NEWS>`__
+
+              `Python 2.7.4 <http://www.python.org/download/releases/2.7.4/>`__ は Python 2.7 系列のバグフィックスリリースで、数百件のBug修正が取り込まれています。
+   -
     pubDate: Sun, 13 Jan 2013, 18:00 +0900
     title: "Tokyo.Scipy #5 1月26日に開催"
     description: !rest "科学技術計算に Python を利用するための勉強会 `Tokyo.SciPy #5 <https://github.com/tokyo-scipy/archive/tree/master/005>`__ が、1月26日に開催されます。詳細は `Tokyo.SciPy <https://github.com/tokyo-scipy/archive>`__ を御覧ください。"

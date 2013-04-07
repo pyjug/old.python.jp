@@ -16,14 +16,14 @@ Nav:
 Quick-links:
     公式ウェブサイト {Python Programming Language Official Website} http://www.python.org
     Pythonパッケージインデックス {Pythonソフトウェアリポジトリ} http://pypi.python.org/pypi
-    Python 2.7.3 http://www.python.org/download/releases/2.7.3/
+    Python 2.7.4 http://www.python.org/download/releases/2.7.4/
         日本語ドキュメント {最新ドキュメント} http://docs.python.jp/2.7/
-        Windows インストーラ {Windows環境用 Pythonインストーラ} http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi
-        ソースコード {最新版 ソースコード} http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2
-    Python 3.3.0 http://www.python.org/download/releases/3.3.0/
-        ドキュメント (nightly) {Python 3.3.0 ドキュメント} http://docs.python.jp/3.3/
-        Windows インストーラ {Windows環境用 Pythonインストーラ} http://www.python.org/ftp/python/3.3.0/python-3.3.0.msi
-        ソースコード {Python 3.3.0 ソースコード} http://www.python.org/ftp/python/3.3.0/Python-3.3.0.tar.bz2
+        Windows インストーラ {Windows環境用 Pythonインストーラ} http://www.python.org/ftp/python/2.7.4/python-2.7.4.msi
+        ソースコード {最新版 ソースコード} http://www.python.org/ftp/python/2.7.4/Python-2.7.4.tar.bz2
+    Python 3.3.1 http://www.python.org/download/releases/3.3.1/
+        ドキュメント (nightly) {Python 3.3.1 ドキュメント} http://docs.python.jp/3.3/
+        Windows インストーラ {Windows環境用 Pythonインストーラ} http://www.python.org/ftp/python/3.3.1/python-3.3.1.msi
+        ソースコード {Python 3.3.1 ソースコード} http://www.python.org/ftp/python/3.3.1/Python-3.3.1.tar.bz2
 
 
 *プログラミング言語 Pythonで、仕事をもっと迅速に、効率的に。Pythonを学んで、生産性の向上とコスト削減を今すぐ！*
