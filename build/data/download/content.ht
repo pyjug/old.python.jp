@@ -1,29 +1,29 @@
-Content-type: text/x-rst
+2.ntent-type: text/x-rst
 Title: ダウンロード
 
 Pythonのダウンロード
 ============================
 
-現在、Pythonの最新バージョンは Python 2.7.4 と Python 3.3.1 です。特別な理由のない限り、最新版の利用をお勧めします。
+現在、Pythonの最新バージョンは Python 2.7.5 と Python 3.3.1 です。特別な理由のない限り、最新版の利用をお勧めします。
 
 
-Python 2.7.4 のダウンロード
+Python 2.7.5 のダウンロード
 -----------------------------
 
 Windows インストーラ
-  * x86版 `python-2.7.4.msi <http://www.python.org/ftp/python/2.7.4/python-2.7.4.msi>`_
+  * x86版 `python-2.7.5.msi <http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi>`_
 
-  * X86-64版 `python-2.7.4.amd64.msi <http://www.python.org/ftp/python/2.7.4/python-2.7.4.amd64.msi>`_
+  * X86-64版 `python-2.7.5.amd64.msi <http://www.python.org/ftp/python/2.7.5/python-2.7.5.amd64.msi>`_
 
 Mac OS X インストーラ
-  * x86-64/i386 インストーラ(Mac OS X 10.6 以降) `python-2.7.4-macosx10.6.dmg <http://www.python.org/ftp/python/2.7.4/python-2.7.4-macosx10.6.dmg>`_
+  * x86-64/i386 インストーラ(Mac OS X 10.6 以降) `python-2.7.5-macosx10.6.dmg <http://www.python.org/ftp/python/2.7.5/python-2.7.5-macosx10.6.dmg>`_
 
-  * 32-bit i386/PPC インストーラ(Mac OS X 10.3 〜 10.6): `python-2.7.4-macosx10.3.dmg <http://www.python.org/ftp/python/2.7.4/python-2.7.4-macosx10.3.dmg>`_
+  * 32-bit i386/PPC インストーラ(Mac OS X 10.3 〜 10.6): `python-2.7.5-macosx10.3.dmg <http://www.python.org/ftp/python/2.7.5/python-2.7.5-macosx10.3.dmg>`_
 
 ソースコード
-  * tar.gz形式 `Python-2.7.4.tgz <http://www.python.org/ftp/python/2.7.4/Python-2.7.4.tgz>`_
+  * tar.gz形式 `Python-2.7.5.tgz <http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz>`_
 
-  * tar.bz2形式 `Python-2.7.4.tar.bz2 <http://www.python.org/ftp/python/2.7.4/Python-2.7.4.tar.bz2>`_
+  * tar.bz2形式 `Python-2.7.5.tar.bz2 <http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tar.bz2>`_
 
 
 Python 3.3.1 のダウンロード
