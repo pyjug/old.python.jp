@@ -4,45 +4,46 @@ Title: ダウンロード
 Pythonのダウンロード
 ============================
 
-現在、Pythonの最新バージョンは Python 2.7.5 と Python 3.3.1 です。特別な理由のない限り、最新版の利用をお勧めします。
+現在、Pythonの最新バージョンは Python 2.7.6 と Python 3.3.3 です。特別な理由のない限り、最新版の利用をお勧めします。
 
 
-Python 2.7.5 のダウンロード
+Python 2.7.6 のダウンロード
 -----------------------------
 
 Windows インストーラ
-  * x86版 `python-2.7.5.msi <http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi>`_
+  * x86版 `python-2.7.6.msi <http://www.python.org/ftp/python/2.7.6/python-2.7.6.msi>`_
 
-  * X86-64版 `python-2.7.5.amd64.msi <http://www.python.org/ftp/python/2.7.5/python-2.7.5.amd64.msi>`_
+  * X86-64版 `python-2.7.6.amd64.msi <http://www.python.org/ftp/python/2.7.6/python-2.7.6.amd64.msi>`_
 
 Mac OS X インストーラ
-  * x86-64/i386 インストーラ(Mac OS X 10.6 以降) `python-2.7.5-macosx10.6.dmg <http://www.python.org/ftp/python/2.7.5/python-2.7.5-macosx10.6.dmg>`_
+  * x86-64/i386 インストーラ(Mac OS X 10.6 以降) `python-2.7.6-macosx10.6.dmg <http://www.python.org/ftp/python/2.7.6/python-2.7.6-macosx10.6.dmg>`_
 
-  * 32-bit i386/PPC インストーラ(Mac OS X 10.3 〜 10.6): `python-2.7.5-macosx10.3.dmg <http://www.python.org/ftp/python/2.7.5/python-2.7.5-macosx10.3.dmg>`_
+  * 32-bit i386/PPC インストーラ(Mac OS X 10.3 〜 10.6): `python-2.7.6-macosx10.3.dmg <http://www.python.org/ftp/python/2.7.6/python-2.7.6-macosx10.3.dmg>`_
 
 ソースコード
-  * tar.gz形式 `Python-2.7.5.tgz <http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz>`_
+  * tar.xz形式 `Python-2.7.6.tar.xz <http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tar.xz>`_
 
-  * tar.bz2形式 `Python-2.7.5.tar.bz2 <http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tar.bz2>`_
+  * tar.gz形式 `Python-2.7.6.tgz <http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tgz>`_
 
 
-Python 3.3.1 のダウンロード
+
+Python 3.3.3 のダウンロード
 -----------------------------
 
 Windows インストーラ
-  * x86版 `python-3.3.1.msi <http://www.python.org/ftp/python/3.3.1/python-3.3.1.msi>`_
+  * x86版 `python-3.3.3.msi <http://www.python.org/ftp/python/3.3.3/python-3.3.3.msi>`_
 
-  * X86-64版 `python-3.3.1.amd64.msi <http://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64.msi>`_
+  * X86-64版 `python-3.3.3.amd64.msi <http://www.python.org/ftp/python/3.3.3/python-3.3.3.amd64.msi>`_
 
 Mac OS X インストーラ
-  * x86-64/i386 インストーラ(Mac OS X 10.6 以降) `python-3.3.1-macosx10.6.dmg <http://www.python.org/ftp/python/3.3.1/python-3.3.1-macosx10.6.dmg>`_
+  * x86-64/i386 インストーラ(Mac OS X 10.6 以降) `python-3.3.3-macosx10.6.dmg <http://www.python.org/ftp/python/3.3.3/python-3.3.3-macosx10.6.dmg>`_
 
-  * 32-bit i386/PPC インストーラ(Mac OS X 10.5 以降): `python-3.3.1-macosx10.5.dmg <http://www.python.org/ftp/python/3.3.1/python-3.3.1-macosx10.5.dmg>`_
+  * 32-bit i386/PPC インストーラ(Mac OS X 10.5 以降): `python-3.3.3-macosx10.5.dmg <http://www.python.org/ftp/python/3.3.3/python-3.3.3-macosx10.5.dmg>`_
 
 ソースコード
-  * tar.gz形式 `Python-3.3.1.tgz <http://www.python.org/ftp/python/3.3.1/Python-3.3.1.tgz>`_
+  * tar.xz形式 `Python-3.3.3.tar.xz <http://www.python.org/ftp/python/3.3.3/Python-3.3.3.tar.xz>`_
 
-  * tar.bz2形式 `Python-3.3.1.tar.bz2 <http://www.python.org/ftp/python/3.3.1/Python-3.3.1.tar.bz2>`_
+  * tar.gz形式 `Python-3.3.3.tgz <http://www.python.org/ftp/python/3.3.3/Python-3.3.3.tgz>`_
 
 
 その他のリリース
