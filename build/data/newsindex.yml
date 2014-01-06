@@ -6,6 +6,10 @@ template: newsindex.html
 global:
   news:
    -
+    pubDate: Mon, 6 Jan 2014, 11:00 +0900
+    title: "Python 3.4 beta2 リリース"
+    description: !rest "Python 3.4最後のベータリリースとなる、`Python 3.4 beta2がリリース <http://www.python.org/download/releases/3.4.0/>`_ されました。 現在のスケジュールでは、今後 rc1/rc2 の公開を経て、2月23日に正式版が公開される予定になっています。"
+   -
     pubDate: Sun, 7 July 2013, 24:00 +0900
     title: "EuroPython 2014/2015カンファレンスチーム CfPをサイト募集"
     description: !rest "EuroPython SocietyはEuroPython2014-2015のチームボランティアの編成のための意見を募るために `EuroPythonのためのCfP <https://ep2013.europython.eu/blog/2013/05/15/epc20145-call-proposals>`__ を告知した。"
