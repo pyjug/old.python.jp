@@ -34,4 +34,7 @@ djangoproject.jp
 
 `djangoproject.jp <http://djangoproject.jp/>`_ は、日本の `Django <https://www.djangoproject.com/>`_ ユーザ有志でつくられたユーザコミュニティで、2006年2月に結成されました。 djangoproject.jp ウェブサイトやメーリングリストを通じて Django に関する情報交換を行い、国内での Django (と、もちろんインデントも!)の普及に努めています。
 
+Sphinx-Users.jp
+====================
 
+`Sphinx-Users.jp <http://sphinx-users.jp/>`_ (略称#sphinxjp)は、美しいドキュメントを簡単に生成することができるドキュメンテーションツール、`Sphinx <http://sphinx-doc.org/>`_\ （スフィンクス）の普及を主眼としたコミュニティです。SphinxはPythonの公式ドキュメントだけでなく、このSphinx-Users.jpのサイトも含め多くのマニュアルやサイトで使用されており、詳細を `Sphinxの歴史 <http://sphinx-users.jp/history.html>`_ で紹介しています。
