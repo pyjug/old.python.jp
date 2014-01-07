@@ -10,11 +10,11 @@ jobrss: data/community/jobs/content.ht
 	$(PYTHON) data/community/jobs/jobs2rss.py  data/community/jobs/ out/community/jobs
 	@echo job.rss done
 
-new: jobrss
+new:
 	$(PYTHON) new-build/build.py --cache=pydotorg.cache -v -d data -o out -r images,styles,files,js
 	cp out/news/rdf/index.html out/channews.rdf
 
-all: jobrss new
+all: new
 
 quotes:
 	cd new-build/rss ; $(PYTHON) generate-quotes.py \
