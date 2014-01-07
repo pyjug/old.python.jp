@@ -6,10 +6,10 @@ Nav:
 日本のPythonコミュニティ
 -------------------------
 
-メーリングリスト
-==================
+Python 日本語メーリングリスト
+==============================
 
-`Python日本語メーリングリスト(python-ml-jp) <http://www.python.jp/mailman/listinfo/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
+`Python 日本語メーリングリスト(python-ml-jp) <http://www.python.jp/mailman/listinfo/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
 
 PyCon JP
 ==============
@@ -38,3 +38,9 @@ Sphinx-Users.jp
 ====================
 
 `Sphinx-Users.jp <http://sphinx-users.jp/>`_ (略称#sphinxjp)は、美しいドキュメントを簡単に生成することができるドキュメンテーションツール、`Sphinx <http://sphinx-doc.org/>`_\ （スフィンクス）の普及を主眼としたコミュニティです。SphinxはPythonの公式ドキュメントだけでなく、このSphinx-Users.jpのサイトも含め多くのマニュアルやサイトで使用されており、詳細を `Sphinxの歴史 <http://sphinx-users.jp/history.html>`_ で紹介しています。
+
+
+Plone User's Group Japan
+============================
+
+`Plone User's Group Japan <http://plone.jp/>`_ は、エンタープライズ向け高機能オープンソースCMSである `Plone <http://plone.org/>`_ のユーザー会のサイトです。Ploneは全オープンソースプロジェクトのトップ2%にあたり、57ヵ国に300以上のソリューションプロバイダ企業があり、200名以上のコアデベ ロッパが存在します。Ploneプロジェクトは2001年に開始され40地域以上の言語で利用でき、主要CMSの中でもすぐれたセキュリティを備えていま す。Ploneは非営利組織のPlone Foundationにより管理された主要なOS向けに提供されます。
