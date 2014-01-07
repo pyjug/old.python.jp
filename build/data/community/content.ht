@@ -6,16 +6,27 @@ Nav:
 日本のPythonコミュニティ
 -------------------------
 
+
 Python 日本語メーリングリスト
 ==============================
 
 `Python 日本語メーリングリスト(python-ml-jp) <http://www.python.jp/mailman/listinfo/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
 
-PyCon JP
-==============
+PyCon JP |pyconjp|
+========================
 
 `PyCon JP <http://www.pycon.jp/>`_ は、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換し、交流するためのカンファレンスです。 PyCon JP開催を通してPythonの使い手が一同に集まり、他の分野などの情報や知識や知人を増やす場所とすることが目標です。
 
+
+.. |pyconjp| raw:: html
+
+    <img src='http://www.pycon.jp/_images/pyconjp_logo_s.png' 
+        style='float:right'  hspace=10 vspace=10>
+
+.. raw:: html
+
+   <div style='clear=both' />
+    
 
 Pythonドキュメント日本語翻訳プロジェクト
 =========================================
@@ -23,32 +34,92 @@ Pythonドキュメント日本語翻訳プロジェクト
 `Pythonドキュメント日本語翻訳プロジェクト <https://code.google.com/p/python-doc-ja/>`_ は、Pythonのドキュメントを日本語に翻訳するプロジェクトです。 現在、Python 3.3 のドキュメントに対応するために活動中です。翻訳にご協力いただける方は、`参加方法 <https://code.google.com/p/python-doc-ja/#%E7%BF%BB%E8%A8%B3%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F%E3%81%84%E6%96%B9%E3%81%AF>`_ からご登録ください。
 
 
+|pylonsjp|
+
 Pylons Project JP
-===================
+===============================
+
+.. |pylonsjp| raw:: html
+
+    <img src='http://www.pylonsproject.jp/_/rsrc/1317202944084/config/customLogo.gif?revision=3' style='float:right'>
 
 `Pylons Project JP <http://www.pylonsproject.jp/>`_ は、オープンソースの Python ウェブアプリケーション開発フレームワーク `Pyramid <http://www.pylonsproject.org/>`_ とその関連技術の日本での普及を目的としたコミュニティです。
 
+.. raw:: html
 
-djangoproject.jp
-===================
+   <div style='clear=both'/>
+
+
+|djangojp| djangoproject.jp
+============================
+
+
+.. |djangojp| raw:: html
+
+    <img src='http://djangoproject.jp/m//img/django-logo-negative.png' 
+        style='float:right;'  hspace=10 vspace=10 width=200>
 
 `djangoproject.jp <http://djangoproject.jp/>`_ は、日本の `Django <https://www.djangoproject.com/>`_ ユーザ有志でつくられたユーザコミュニティで、2006年2月に結成されました。 djangoproject.jp ウェブサイトやメーリングリストを通じて Django に関する情報交換を行い、国内での Django (と、もちろんインデントも!)の普及に努めています。
 
-Sphinx-Users.jp
-====================
+|sphinxjp| Sphinx-Users.jp
+===========================
 
-`Sphinx-Users.jp <http://sphinx-users.jp/>`_ (略称#sphinxjp)は、美しいドキュメントを簡単に生成することができるドキュメンテーションツール、`Sphinx <http://sphinx-doc.org/>`_\ （スフィンクス）の普及を主眼としたコミュニティです。SphinxはPythonの公式ドキュメントだけでなく、このSphinx-Users.jpのサイトも含め多くのマニュアルやサイトで使用されており、詳細を `Sphinxの歴史 <http://sphinx-users.jp/history.html>`_ で紹介しています。
+.. |sphinxjp| raw:: html
+
+    <img src='http://sphinx-users.jp/_static/logo.png' 
+        style='float:right;'  hspace=10 vspace=10>
+
+
+`Sphinx-Users.jp <http://sphinx-users.jp/>`_ (略称#sphinxjp)は、美しいドキュメントを簡単に生成することができるドキュメンテーションツール、`Sphinx <http://sphinx-doc.org/>`_\ （スフィンクス）の普及を主眼としたコミュニティです。
+
+SphinxはPythonの公式ドキュメントだけでなく、このSphinx-Users.jpのサイトも含め多くのマニュアルやサイトで使用されており、詳細を `Sphinxの歴史 <http://sphinx-users.jp/history.html>`_ で紹介しています。
+
+.. raw:: html
+
+   <div style='clear=both'><br/></div>
+
+|plonejp| 
+
+.. |plonejp| raw:: html
+
+    <img src='http://plone.jp/++theme++plonejp.stheme/images/logo.png' style='float:right' width='300'>
 
 
 Plone User's Group Japan
-============================
+===================================
 
-`Plone User's Group Japan <http://plone.jp/>`_ は、エンタープライズ向け高機能オープンソースCMSである `Plone <http://plone.org/>`_ のユーザー会のサイトです。Ploneは全オープンソースプロジェクトのトップ2%にあたり、57ヵ国に300以上のソリューションプロバイダ企業があり、200名以上のコアデベ ロッパが存在します。Ploneプロジェクトは2001年に開始され40地域以上の言語で利用でき、主要CMSの中でもすぐれたセキュリティを備えていま す。Ploneは非営利組織のPlone Foundationにより管理された主要なOS向けに提供されます。
+
+`Plone User's Group Japan <http://plone.jp/>`_ は、エンタープライズ向け高機能オープンソースCMSである `Plone <http://plone.org/>`_ のユーザー会のサイトです。
+
+Ploneは全オープンソースプロジェクトのトップ2%にあたり、57ヵ国に300以上のソリューションプロバイダ企業があり、200名以上のコアデベ ロッパが存在します。Ploneプロジェクトは2001年に開始され40地域以上の言語で利用でき、主要CMSの中でもすぐれたセキュリティを備えていま す。Ploneは非営利組織のPlone Foundationにより管理された主要なOS向けに提供されます。
+
+.. raw:: html
+
+   <div style='clear=both'><br/></div>
+
+
+
+|hackathon| 
+
+.. |hackathon| raw:: html
+
+    <img src='/images/pythonminihackathon.png' width='300' style='float:right'>
 
 
 Python mini Hack-a-thon
 =========================
 
+
 `Python mini Hack-a-thon <http://connpass.com/series/14/>`_ は基本的に毎月開催され、スプリントのゆるい版みたいな感じで各自自分でやりたいことを持ってきて、勝手に開発を進めています。参加費は無料です。
 
 初めての方も常連さんもぜひご参加ください。2009年の6月からZope/Ploneの開発者で集まってもくもくと開発したり色々相談したりとかやっていたんですが、全然Zope/Ploneに限定したことをやっていない気がしてきたので、名前を変えました。
+
+.. raw:: html
+
+   <div style='clear=both'><br/></div>
+
+
+
+.. NOTE::
+   日本国内のPython関連コミュニティでこのページヘの登録をご希望の場合、メールにて *pyjug-contact-at-python.jp* までご連絡ください。
+   
