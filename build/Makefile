@@ -5,11 +5,16 @@
 #   ``make PYTHON=_interp_``.
 PYTHON = python
 
-new:
+jobrss: data/community/jobs/content.ht
+	mkdir -p out/community/jobs
+	$(PYTHON) data/community/jobs/jobs2rss.py  data/community/jobs/ out/community/jobs
+	@echo job.rss done
+
+new: jobrss
 	$(PYTHON) new-build/build.py --cache=pydotorg.cache -v -d data -o out -r images,styles,files,js
 	cp out/news/rdf/index.html out/channews.rdf
 
-all: new
+all: jobrss new
 
 quotes:
 	cd new-build/rss ; $(PYTHON) generate-quotes.py \

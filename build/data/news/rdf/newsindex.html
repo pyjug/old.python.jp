@@ -1,20 +1,18 @@
   <channel>
-    <title>Python News</title>
-    <link>http://www.python.org/</link>
-    <description>Python-related news and announcements.
-      Python is an interpreted, interactive, object-oriented
-      programming language. </description>
+    <title>Python.jp news</title>
+    <link>http://www.python.jp/</link>
+    <description>プログラミング言語 Python に関するニュースをお知らせします</description>
 
   <image>
-  <title>Python</title>
-  <url>http://www.python.org/images/python-logo.gif</url>
-  <link>http://www.python.org/</link>
+  <title>Python</title>http://www.python.jp/images/pyjug.png
+  <url>http://www.python.jp/images/pyjug.png</url>
+  <link>http://www.python.jp/</link>
   </image>
  
   <n:invisible n:data="news">
   <n:invisible n:render="sequence" n:data=":20">
     <item n:pattern="item" n:render="mapping">
-      <guid>http://www.python.org/news/index.html#<n:invisible  n:render="anchorify" n:data="pubDate"/></guid>
+      <guid>http://www.python.jp/news/index.html#<n:invisible  n:render="anchorify" n:data="pubDate"/></guid>
       <title><n:slot name="title" /></title>
       <description>
         <n:invisible n:render="stringify" n:data="description"/>
