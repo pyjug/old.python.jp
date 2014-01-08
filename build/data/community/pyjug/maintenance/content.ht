@@ -20,7 +20,8 @@ python.jpのデータをダウンロードする
   easy_install mako
   easy_install pyyaml
   easy_install docutils
-
+  easy_install PyRSS2Gen
+  
 サイトをビルドします::
 
   make new

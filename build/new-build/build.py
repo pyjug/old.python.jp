@@ -1,4 +1,5 @@
 #!/usr/bin/env python2.4
+# -*- coding: utf-8 -*-
 
 """
    This module is a standalone program for building the static HTML content of
@@ -14,11 +15,10 @@ import pprint, copy, random
 
 import yaml
 import feedparser
-
 #from mako.template import Template
 
 import build_util, rst_html, pyramid_yaml
-
+import jp_build, PyRSS2Gen, datetime
 #
 # Global variables
 #
@@ -132,26 +132,45 @@ def read_news ():
        that contain information about each news item.
     """
 
-    input = open(os.path.join(options.data, 'newsindex.yml'), 'r')
-    data = yaml.load(input, pyramid_yaml.PyramidLoader)
-    input.close()
+    yamls = jp_build.read_files('jp_data')
     result = []
-    for mapping_node in data.globals['news']:
-        d = {}
-        L = list(mapping_node.value)
-        for key_node, value_node in L:
-            key = key_node.value
-            item_html = value_node.value
+    for rec in yamls[:40]:
+        item_html = rst_html.process_rst('newsindex.yml', rec['text'])
+        item_html = item_html.strip()
 
-            if key == 'description':
-                item_html = rst_html.process_rst('newsindex.yml', item_html)
-                item_html = item_html.strip()
-
-                if item_html.startswith('<p>'): item_html = item_html[3:]
-                if item_html.endswith('<p>'): item_html = item_html[:-3]
-
-            d[key_node.value] = item_html
+        if item_html.startswith('<p>'): item_html = item_html[3:]
+        if item_html.endswith('<p>'): item_html = item_html[:-3]
+        dir = '/community/event/#' if rec['type'] == 'event' else '/news/#'
+        d = {
+            'url': rec['path'],
+            'title': rec['title'],
+            'date': rec['date'],
+            'text': item_html
+        }
         result.append(d)
+
+
+
+#    input = open(os.path.join(options.data, 'newsindex.yml'), 'r')
+#    data = yaml.load(input, pyramid_yaml.PyramidLoader)
+#    input.close()
+#    result = []
+#    for mapping_node in data.globals['news']:
+#        d = {}
+#        L = list(mapping_node.value)
+#        for key_node, value_node in L:
+#            key = key_node.value
+#            item_html = value_node.value
+#
+#            if key == 'description':
+#                item_html = rst_html.process_rst('newsindex.yml', item_html)
+#                item_html = item_html.strip()
+#
+#                if item_html.startswith('<p>'): item_html = item_html[3:]
+#                if item_html.endswith('<p>'): item_html = item_html[:-3]
+#
+#            d[key_node.value] = item_html
+#        result.append(d)
 
     return result
 
@@ -807,6 +826,34 @@ def copy_nosvn(src, dst):
         # can't copy file access times on Windows
         pass
 
+def save_rss():
+    yamls = read_news()
+    host = 'http://www.python.jp'
+    items = [
+        PyRSS2Gen.RSSItem(
+            title=item['title'],
+            link= host+item['url'],
+            description=item['text'],
+            guid=PyRSS2Gen.Guid(host+item['url']),
+            pubDate=item['date']
+            )
+        for item in yamls]
+
+    image = PyRSS2Gen.Image(
+        url='http://www.python.jp/images/pyjug.png',
+        title='Python.jp logo',
+        link='http://www.python.jp/')
+
+    rss = PyRSS2Gen.RSS2(
+        title = u"Python.jp ニュース",
+        link = host,
+        description = u"プログラミング言語 Python に関するニュースをお知らせします",
+        image=image,
+        lastBuildDate = datetime.datetime.utcnow(),
+        items=items)
+
+    rss.write_xml(open(os.path.join(options.out, 'channews.rdf'), "w"), encoding='utf-8')
+
 def execute (args):
     # Read the template
     global basic_template
@@ -851,6 +898,7 @@ def execute (args):
     log('Total time for rebuild: %.1f sec', time.time()-start, level=1)
     save_cache()
 
+    save_rss()
 
 def main():
     global options

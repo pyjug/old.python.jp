@@ -1,33 +1,21 @@
 Content-type: text/x-rst
-Title: Python News
+Title: Python イベント
 
-Python ニュース
+Python 関連イベント
 -------------------------
 
 
 
-.. _9fbf631bc9c0b36d0f595bc33004ee1f231477f2:
+.. _e362d750cbe388333a7b3d43ca0002b13b950b5c:
 
 
-Python 3.4 beta2 リリース
-================================================================
-
-*2014-01-06 02:00*
-
-Python 3.4最後のベータリリースとなる、`Python 3.4 beta2がリリース <http://www.python.org/download/releases/3.4.0/>`_ されました。 
-現在のスケジュールでは、今後 rc1/rc2 の公開を経て、2月23日に正式版が公開される予定になっています。
-
-
-
-
-
-.. _6ecd48b06f0a02c9a24e4895c59e69ccfda159a5:
-
-
-Python 2.7.4 / 3.2.4 / 3.3.1 リリース
+イベント
 ================================================================
 
 *2013-04-07 03:00*
+
+:日付: どっか
+:場所: 2013-04-07 03:00
 
 3つのメジャーバージョン Python 2.7、Python 3.2、 Python 3.3 のバグフィックスリリースである、 `Python 2.7.4 <http://www.python.org/download/releases/2.7.4/>`__ 、 `Python 3.2.4 <http://www.python.org/download/releases/3.2.4/>`__、 `Python 3.3.1 <http://www.python.org/download/releases/3.3.1/>`__ がリリースされました。
 
@@ -43,17 +31,4 @@ Python 2.7.4 / 3.2.4 / 3.3.1 リリース
 
   `Python 2.7.4 <http://www.python.org/download/releases/2.7.4/>`__ は Python 2.7 系列のバグフィックスリリースで、数百件のBug修正が取り込まれています。
 
-
-
-
-
-.. _db3526a9e59f7084895ba3ca498ef35ff9adef16:
-
-
-Python 3.3 リリース
-================================================================
-
-*2012-09-29 09:00*
-
-Python 3.3.0 が `リリース <http://python.org/download/releases/3.3.0/>`__ されました。
 

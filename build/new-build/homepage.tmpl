@@ -34,10 +34,10 @@
         <div class="content-section">
             <div id="newsindex" class="news-section">
 	      <% news_items = read_news() %>
-	      %for item in news_items[:7]:
-		<h2 class="news">${item['title']}</h2>
-		  ${item['description']}
-		<div class="pubdate">Published: ${item['pubDate']}</div>
+	      %for item in news_items[:10]:
+		<h2 class="news"><a href="${item['url']}">${item['title']}</a></h2>
+		  ${item['text']}
+		<div class="pubdate">Published: ${item['date'].strftime('%Y-%m-%d')}</div>
 	      %endfor
 	      [ <a href="/channews.rdf">RSS</a> ]
              </div>
@@ -153,10 +153,10 @@
             <% news_items = read_news() %>
             %for item in news_items[:5]:
               <h2 class="news">${item['title']}</h2>
-  	        ${item['description']}
-              <div class="pubdate">Published: ${item['pubDate']}</div>
+  	        ${item['text']}
+              <div class="pubdate">asdasdasPublished: ${item['date']}</div>
             %endfor
-            [ <a href="/channews.rdf">RSS</a> ]
+            [ <a href="/channews.rdf">RSS</a> a ]
         </div>
       </div>
       <div id="footer">

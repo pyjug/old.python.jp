@@ -5,14 +5,10 @@
 #   ``make PYTHON=_interp_``.
 PYTHON = python
 
-jobrss: data/community/jobs/content.ht
-	mkdir -p out/community/jobs
-	$(PYTHON) data/community/jobs/jobs2rss.py  data/community/jobs/ out/community/jobs
-	@echo job.rss done
-
 new:
+	$(PYTHON) new-build/jp_build.py
 	$(PYTHON) new-build/build.py --cache=pydotorg.cache -v -d data -o out -r images,styles,files,js
-	cp out/news/rdf/index.html out/channews.rdf
+#	cp out/news/rdf/index.html out/channews.rdf
 
 all: new
 
