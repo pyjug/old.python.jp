@@ -124,9 +124,16 @@ Python 関連イベント
 '''
     all = []
     for d in data:
+        if 'event-date-to' in d and d['event-date'].date() != d['event-date-to'].date():
+            datestr = u' 〜 '.join([
+                d['event-date'].strftime('%Y-%m-%d'),
+                d['event-date-to'].strftime('%Y-%m-%d')])
+        else:
+            datestr = d['event-date'].strftime('%Y-%m-%d %H:%M')
+
         s = temp % (sha.sha(d['filename']).hexdigest(), 
             d['title'], d['event-date'].strftime('%Y-%m-%d %H:%M'), 
-            d['location'], d['date'].strftime('%Y-%m-%d %H:%M'), 
+            d['location'], datestr, 
             d['text'])
         all.append(s)
 
