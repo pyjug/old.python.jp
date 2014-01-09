@@ -1,0 +1,17 @@
+type: event
+title: Sphinx+翻訳 Hack-a-thon 2014.1/Sphinxハンズオン
+date: 2014-01-9 17:00:00
+event-date: 2014-01-26 13:00:00
+location: 渋谷区千駄ヶ谷
+link: http://connpass.com/event/4397/
+text: |
+    ソフトウェアのドキュメントに興味のある人が集まって、わいわいもくもく作業をする会です。
+
+description: |
+    主に以下の方を対象にしています。
+
+    - Sphinx で文章を書きたい/書いている人
+    - ドキュメントの執筆/翻訳をしている人 (Sphinx を使ってなくても ok)
+    - Sphinx のハック(改良、拡張づくり、テーマづくりなど)をしている人
+    - Sphinx に興味がある/使ってみたい人
+    - その他ドキュメントに関する素敵ななにか (all that's nice :-)

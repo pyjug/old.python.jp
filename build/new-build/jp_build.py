@@ -116,30 +116,38 @@ Python関連のコミュニティ・ユーザ会・企業のイベントや勉�
 .. _%s:
 
 
-%s
-================================================================
+`%s <%s>`_
+========================================================================================================
 
-*%s*
+\ 
 
 :日付: %s
 :場所: %s
 
 %s
 
+%s
+
+:掲載日: %s
+
 '''
+
+    data = sorted(data, key=lambda d:d['date'])
     all = []
     for d in data:
         if 'event-date-to' in d and d['event-date'].date() != d['event-date-to'].date():
+            dt = d['event-date'].astimezone(JST())
+            dt2 = d['event-date-to'].astimezone(JST())
             datestr = u' 〜 '.join([
-                d['event-date'].strftime('%Y-%m-%d'),
-                d['event-date-to'].strftime('%Y-%m-%d')])
+                dt.strftime('%Y-%m-%d'),
+                dt2.strftime('%Y-%m-%d')])
         else:
-            datestr = d['event-date'].strftime('%Y-%m-%d %H:%M')
+            datestr = d['event-date'].astimezone(JST()).strftime('%Y-%m-%d %H:%M')
 
         s = temp % (sha.sha(d['filename']).hexdigest(), 
-            d['title'], d['event-date'].strftime('%Y-%m-%d %H:%M'), 
-            d['location'], datestr, 
-            d['text'])
+            d['title'], d['link'], datestr, 
+            d['location'], d['text'], d['description'],
+            d['date'].astimezone(JST()).strftime('%Y-%m-%d %H:%M'), )
         all.append(s)
 
     return header + u'\n'.join(all)
