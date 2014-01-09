@@ -1,9 +1,11 @@
 type: event
-title: イベント
-date: 2013-04-07 12:00:00
-event-date: 2013-04-07 12:00:00
-event-date-to: 2013-04-07 12:00:00
-location: どっか
+title: タイトル
+date: 2014-1-9 17:30:00
+event-date: 2014-01-25 12:00:00
+location: 渋谷区千駄ヶ谷
+link: http://connpass.com/event/4733/
 text: |
-    3つのメジャーバージョン Python 2.7、Python 3.2、 Python 3.3 のバグフィックスリリースである、 `Python 2.7.4 <http://www.python.org/download/releases/2.7.4/>`__ 、 `Python 3.2.4 <http://www.python.org/download/releases/3.2.4/>`__、 `Python 3.3.1 <http://www.python.org/download/releases/3.3.1/>`__ がリリースされました。
+    テキスト
 
+description: |
+    詳細
