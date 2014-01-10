@@ -1,5 +1,6 @@
 type: event
 title: pylons/pyramidはっかそん2014.1
+
 date: 2014-01-9 17:30:00
 event-date: 2014-01-25 12:00:00
 location: 渋谷区千駄ヶ谷
@@ -8,10 +9,11 @@ text: |
     Pylons プロジェクトの Pyramid フレームワークや Repoze, WSGI などに関する何かをやる会です。
 
 description: |
-    - Pyramidを使ってアプリケーション開発したり、
-    - 関連ツールを試したり、
-    - コードリーディングしたり、
-    - 開発事例についてしゃべったり、
-    - Pyramid本体の開発したり、
-
+    <ul>
+    <li>Pyramidを使ってアプリケーション開発したり、
+    <li>関連ツールを試したり、</li>
+    <li>コードリーディングしたり、</li>
+    <li>開発事例についてしゃべったり、</li>
+    <li>Pyramid本体の開発したり、</li>
+    </ul>
     します。

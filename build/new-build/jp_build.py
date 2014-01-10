@@ -126,7 +126,11 @@ Python関連のコミュニティ・ユーザ会・企業のイベントや勉�
 
 %s
 
-%s
+.. raw:: html
+
+    %s
+
+\ 
 
 :掲載日: %s
 
@@ -143,10 +147,11 @@ Python関連のコミュニティ・ユーザ会・企業のイベントや勉�
                 dt2.strftime('%Y-%m-%d')])
         else:
             datestr = d['event-date'].astimezone(JST()).strftime('%Y-%m-%d %H:%M')
+        descr = u'\n'.join(u'   ' + L for L in d['description'].split(u'\n'))
 
         s = temp % (sha.sha(d['filename']).hexdigest(), 
             d['title'], d['link'], datestr, 
-            d['location'], d['text'], d['description'],
+            d['location'], d['text'], descr,
             d['date'].astimezone(JST()).strftime('%Y-%m-%d %H:%M'), )
         all.append(s)
 
