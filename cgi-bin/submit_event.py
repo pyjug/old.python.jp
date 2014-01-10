@@ -78,7 +78,7 @@ def main():
 
     if not check(eventid, mailaddr):
         return
-    filename = search(eventid)
+    filename = search(eventid, mailaddr)
 
     url = 'http://www.python.jp/cgi-bin/confirm-connpass-event.py?reqid=%s' % filename
     if not sendmail(mailaddr, url):
