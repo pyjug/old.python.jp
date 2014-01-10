@@ -57,6 +57,9 @@ def sendmail(mailaddr, url):
     o, e =  p.communicate(mail.as_string())
     if p.returncode:
         print o, e, p.returncode
+        return
+
+    return True
 
 def main():
     form = cgi.FieldStorage()
@@ -74,6 +77,10 @@ def main():
     filename = search(eventid)
 
     url = 'http://www.python.jp/cgi-bin/confirm-connpass-event.py?reqid=%s' % filename
-    sendmail(mailaddr, url)
+    if not sendmail(mailaddr, url):
+        return
+
+    print '確認用のメールを送信しました。ご確認の上、登録を確定してください'
+
 
 main()
