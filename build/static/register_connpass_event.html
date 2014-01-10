@@ -1,0 +1,35 @@
+<html>
+<head><meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+
+<script>
+$(function() {
+    $("input[name='eventid']").change(function() {
+        eventid = $("input[name='eventid']").val();
+        $.ajax({
+            url:"/cgi-bin/get_event.py",
+            type:"POST",
+            dataType: "json",
+            data: {
+                eventid: eventid
+            },
+            success: function(data) {
+                $('#connpass_title').text(data);
+            },
+            error: function( jqXHR, textStatus, errorThrown) {
+                alert(textStatus);
+            }
+        });
+    });
+});
+
+</script>
+</head>
+<body>
+<form method="POST" action="/cgi-bin/submit_event.py">
+    <p>connpass イベントID<br/><input name="eventid"> <span id="connpass_title"></span> <br/>
+    メールアドレス<br/><input name="mailaddr"><br/>
+    <button type="submit">登録</button></p>
+</form>
+</body>
+</html>

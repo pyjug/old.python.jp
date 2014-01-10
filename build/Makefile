@@ -8,7 +8,7 @@ PYTHON = python
 new:
 	-rm out/index.html
 	$(PYTHON) new-build/jp_build.py
-	$(PYTHON) new-build/build.py --cache=pydotorg.cache -v -d data -o out -r images,styles,files,js
+	$(PYTHON) new-build/build.py --cache=pydotorg.cache -v -d data -o out -r images,styles,files,js,static
 #	cp out/news/rdf/index.html out/channews.rdf
 
 all: new
