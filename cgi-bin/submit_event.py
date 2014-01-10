@@ -3,7 +3,7 @@
 import cgitb
 cgitb.enable()
 
-import sys, cgi, re, json, urllib2, string, hashlib, os, time, subprocess
+import os, sys, cgi, re, json, urllib2, string, hashlib, os, time, subprocess
 from email.MIMEText import MIMEText
 from email.Header import Header
 
@@ -23,14 +23,15 @@ def check(eventid, mailaddr):
         return
     return True
 
-def search(eventid):
+def search(eventid, mailaddr):
     response = urllib2.urlopen(
         'http://connpass.com/api/v1/event/?event_id=%s' % eventid)
     s = response.read()
-    json.loads(s)
+    rec = json.loads(s)
+    rec['req-mailaddr'] = mailaddr
     hash = hashlib.sha1(str(time.time())+s).hexdigest()
     with open(os.path.join(JSON_DIR, hash), 'w') as f:
-        f.write(s)
+        f.write(json.dumps(rec))
     return hash
 
 msg = u'''
@@ -62,6 +63,9 @@ def sendmail(mailaddr, url):
     return True
 
 def main():
+    if os.environ['REQUEST_METHOD'] != 'POST':
+        return
+        
     form = cgi.FieldStorage()
 
     print "Content-Type: text/html"
