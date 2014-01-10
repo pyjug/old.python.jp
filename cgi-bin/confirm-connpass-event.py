@@ -44,11 +44,11 @@ def sendmail(reqid):
     mail['To'] = mailaddr
     mail['Subject'] = Header(u'Python.jp イベント登録の確認', 'iso-2022-jp')
 
-    msg.attach(MIMEText(msg % (reqid, s), _charset='iso-2022-jp'))
+    mail.attach(MIMEText(msg % (reqid, s), _charset='iso-2022-jp'))
     j = MIMEApplication(s, 'octet-stream', encode_base64)
-    j.add_header('Content-Disposition', 'attachment; filename="%s"' % reqid.json)
-    msg.attach(j)
-    
+    j.add_header('Content-Disposition', 'attachment; filename="%s.json"' % reqid)
+    mail.attach(j)
+
     p = subprocess.Popen([SENDMAIL, mailaddr], stdin=subprocess.PIPE,
                          stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     o, e =  p.communicate(mail.as_string())
