@@ -4,6 +4,8 @@ import cgitb
 cgitb.enable()
 
 import os, sys, cgi, re, json, urllib2, string, hashlib, os, time, subprocess
+import datetime
+import dateutil.parser
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 from email.mime.application import MIMEApplication
@@ -22,6 +24,31 @@ def check(reqid):
         print('IDが正しくありません')
         return
     return True
+
+def _to_utf8(s):
+    if isinstance(s, unicode):
+        return s.encode('utf-8')
+    return s
+
+def to_yaml(src):
+    ev = src['events'][0]
+    rec = {'type': 'event'}
+    rec['req-mailaddr'] = _to_utf8(src['req-mailaddr']
+    rec['title'] =  _to_utf8(ev['title'])
+    rec['date'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S +09:00')
+    d = dateutil.parser.parser(ev['started_at'])
+    rec['event-date'] =  d.strftime('%Y-%m-%d %H:%M:%S +09:00')
+    d = dateutil.parser.parser(ev['end_at'])
+    rec['event-date-to'] =  d.strftime('%Y-%m-%d %H:%M:%S +09:00')
+    rec['location'] =  _to_utf8(ev['address'])
+    rec['link'] =  _to_utf8(ev['event_url'])
+    rec['text'] =  _to_utf8(ev['catch'])
+    rec['description'] =  _to_utf8(ev['description'])
+
+    return unicode(yaml.safe_dump(
+                        rec, default_style='|', allow_unicode=True,
+                        encoding='utf-8'), 
+                   'utf-8')
 
 msg = u'''
 
@@ -42,11 +69,14 @@ def sendmail(reqid):
     mail = MIMEMultipart()
     mail['From'] = 'noreply@python.jp'
     mail['To'] = mailaddr
-    mail['Subject'] = Header(u'Python.jp イベント登録の確認', 'iso-2022-jp')
+    mail['Subject'] = Header(u'Python.jp イベント登録の確認', 'utf-8')
 
-    mail.attach(MIMEText(msg % (reqid, s), _charset='iso-2022-jp'))
-    j = MIMEApplication(s, 'octet-stream', encode_base64)
-    j.add_header('Content-Disposition', 'attachment; filename="%s.json"' % reqid)
+    y = to_yaml(s)
+    mail.attach(MIMEText(msg % (reqid, y), _charset='utf-8'))
+    
+    j = MIMEApplication(y.encode('utf-8'), 'octet-stream', encode_base64)
+    j.add_header('Content-Disposition', 
+                 'attachment; filename="%s.json"' % reqid)
     mail.attach(j)
 
     p = subprocess.Popen([SENDMAIL, mailaddr], stdin=subprocess.PIPE,

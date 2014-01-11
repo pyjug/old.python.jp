@@ -2,6 +2,7 @@ type: event
 title: タイトル
 date: 2014-1-9 17:30:00
 event-date: 2014-01-25 12:00:00
+event-date-to: 2014-01-25 18:00:00
 location: 渋谷区千駄ヶ谷
 link: http://connpass.com/event/4733/
 text: |

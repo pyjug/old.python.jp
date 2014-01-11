@@ -21,6 +21,7 @@ python.jpのデータをダウンロードする
   easy_install pyyaml
   easy_install docutils
   easy_install PyRSS2Gen
+  easy_install dateutils
   
 サイトをビルドします::
 
