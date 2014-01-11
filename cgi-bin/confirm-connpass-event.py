@@ -4,7 +4,7 @@ import cgitb
 cgitb.enable()
 
 import os, sys, cgi, re, json, urllib2, string, hashlib, os, time, subprocess
-import datetime
+import datetime, yaml
 import dateutil.parser
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
@@ -31,14 +31,15 @@ def _to_utf8(s):
     return s
 
 def to_yaml(src):
+    src = json.loads(src)
     ev = src['events'][0]
     rec = {'type': 'event'}
-    rec['req-mailaddr'] = _to_utf8(src['req-mailaddr']
-    rec['title'] =  _to_utf8(ev['title'])
+    rec['req-mailaddr'] = _to_utf8(src['req-mailaddr'])
+    rec['title'] = _to_utf8(ev['title'])
     rec['date'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S +09:00')
-    d = dateutil.parser.parser(ev['started_at'])
+    d = dateutil.parser.parse(ev['started_at'])
     rec['event-date'] =  d.strftime('%Y-%m-%d %H:%M:%S +09:00')
-    d = dateutil.parser.parser(ev['end_at'])
+    d = dateutil.parser.parse(ev['ended_at'])
     rec['event-date-to'] =  d.strftime('%Y-%m-%d %H:%M:%S +09:00')
     rec['location'] =  _to_utf8(ev['address'])
     rec['link'] =  _to_utf8(ev['event_url'])
@@ -76,7 +77,7 @@ def sendmail(reqid):
     
     j = MIMEApplication(y.encode('utf-8'), 'octet-stream', encode_base64)
     j.add_header('Content-Disposition', 
-                 'attachment; filename="%s.json"' % reqid)
+                 'attachment; filename="%s.yaml"' % reqid)
     mail.attach(j)
 
     p = subprocess.Popen([SENDMAIL, mailaddr], stdin=subprocess.PIPE,
