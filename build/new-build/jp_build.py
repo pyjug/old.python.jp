@@ -2,6 +2,7 @@
 
 import yaml, glob, os, sys, sha, PyRSS2Gen
 from datetime import tzinfo, timedelta, datetime
+import dateutil.parser
 
 def find_files(d):
     files = glob.glob(os.path.join(d, '*'))
@@ -49,6 +50,11 @@ def read_yaml(f):
 
     ret = {}
     for k, v in d.items():
+        if k in ('date', 'event-date', 'event-date-to'):
+            if not isinstance(v, datetime):
+                if v:
+                    v = dateutil.parser.parse(v)
+
         if isinstance(v, datetime):
             v = v.replace(tzinfo=JST()).astimezone(UTC())
         ret[k] = v
@@ -136,7 +142,7 @@ Python関連のコミュニティ・ユーザ会・企業のイベントや勉�
 
 '''
 
-    data = sorted(data, key=lambda d:d['date'])
+    data = sorted(data, key=lambda d:(d['event-date'], d['date']))
     all = []
     for d in data:
         if 'event-date-to' in d and d['event-date'].date() != d['event-date-to'].date():
