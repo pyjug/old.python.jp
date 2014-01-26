@@ -1,0 +1,11 @@
+type: news
+title: Python Package Index(PyPI) サーバ環境が増強
+date: 2014-01-26 13:00:00
+text: |
+  `Python Package Index(PyPI) <https://pypi.python.org/pypi>`_ のサーバ環境が刷新され、より安定した動作を提供できるようになりました。
+
+    https://mail.python.org/pipermail/distutils-sig/2014-January/023522.html
+
+  これまでの環境では障害発生時のフェイルオーバーなどが行えなかったのですが、これからは障害からの素早い復旧や、静的なミラー環境にでのサービス継続なども可能になったそうです。
+
+  ただし、今回の改修によって、これまで提供されていた `pypissh <https://pypi.python.org/pypi/pypissh>`_ が使えなくなってしまいました。pypissh はPyPIにファイルをアップロードする際、ユーザ名とパスワードではなく、SSHのプライベートキーを使って認証できるユーティリティですが、新システムでは利用できません。
