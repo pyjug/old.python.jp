@@ -9,6 +9,22 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 
 
 
+.. _c6e79610c2dac6eadf06d5eb02392036c7a73a23:
+
+
+docutilsの日本語翻訳
+================================================================
+
+*2014-01-26 12:00*
+
+`@shkumagai <https://twitter.com/shkumagai>`_ さんによる docutils の翻訳が、http://docutils.sphinx-users.jp で読めるようになりました。
+
+公開の仕組みは `Sphinx翻訳ドキュメントのビルドと公開の自動化(transifex, drone.io, S3) <http://www.freia.jp/taka/blog/automation-of-the-translated-sphinx-document-building-and-publishing/index.html>`_ にまとめられています。まだ未訳部分も残っています。翻訳に協力できる方の `参加 <https://www.transifex.com/projects/p/docutils/language/ja/>`_ をお待ちしています。
+
+
+
+
+
 .. _e4b58214af599e3ad52f4e5bbfd71b9fef379d6f:
 
 
@@ -21,7 +37,7 @@ Python Package Index(PyPI) サーバ環境が増強
 
   https://mail.python.org/pipermail/distutils-sig/2014-January/023522.html
 
-これまでの環境では障害発生時のフェイルオーバーなどが行えなかったのですが、これからは障害からの素早い復旧や、静的なミラー環境にでのサービス継続なども可能になったそうです。
+これまでの環境では障害発生時のフェイルオーバーなどが行えなかったのですが、これからは障害からの素早い復旧や、静的なミラー環境でのサービス継続なども可能になったそうです。
 
 ただし、今回の改修によって、これまで提供されていた `pypissh <https://pypi.python.org/pypi/pypissh>`_ が使えなくなってしまいました。pypissh はPyPIにファイルをアップロードする際、ユーザ名とパスワードではなく、SSHのプライベートキーを使って認証できるユーティリティですが、新システムでは利用できません。
 
