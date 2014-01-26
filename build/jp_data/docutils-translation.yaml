@@ -1,0 +1,8 @@
+type: news
+title: docutilsの日本語翻訳
+date: 2014-01-26 21:00:00
+text: |
+  `@shkumagai <https://twitter.com/shkumagai>`_ さんによる docutils の翻訳が、http://docutils.sphinx-users.jp で読めるようになりました。
+
+  公開の仕組みは `Sphinx翻訳ドキュメントのビルドと公開の自動化(transifex, drone.io, S3) <http://www.freia.jp/taka/blog/automation-of-the-translated-sphinx-document-building-and-publishing/index.html>`_ にまとめられています。まだ未訳部分も残っています。翻訳に協力できる方の `参加 <https://www.transifex.com/projects/p/docutils/language/ja/>`_ をお待ちしています。
+
