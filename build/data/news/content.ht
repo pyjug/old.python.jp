@@ -9,6 +9,36 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 
 
 
+.. _57301ea8b4fdea6bd38e2b7febad3c63a48715b1:
+
+
+Python 3.4 beta3 リリース
+================================================================
+
+*2014-01-27 08:30*
+
+Python 3.4 の3番目のベータリリース `Python 3.4.0 beta 3 <http://www.python.org/download/releases/3.4.0/>`_ が公開されました。今後、2回のリリース候補を経て、`3月に正式版が公開される予定 <http://www.python.org/dev/peps/pep-0429/>`_ になっています。
+
+
+
+
+
+.. _1ee7f5c703822d2a6c6c2c61872b0cf529c91946:
+
+
+Python 3.3.4 rc1 リリース
+================================================================
+
+*2014-01-27 08:00*
+
+Python 3.3.4 のリリース候補 `Python 3.3.4rc1 <http://www.python.org/download/releases/3.3.4/>`_ が公開されました。このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html>`_ で確認できます。
+
+OS X 10.9 Mavericksで対話コンソールでクラッシュする問題なども含め、多くの修正が行われています。
+
+
+
+
+
 .. _c6e79610c2dac6eadf06d5eb02392036c7a73a23:
 
 

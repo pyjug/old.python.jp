@@ -1,0 +1,8 @@
+type: news
+title: Python 3.3.4 rc1 リリース
+date: 2014-01-27 17:00:00
+text: |
+    Python 3.3.4 のリリース候補 `Python 3.3.4rc1 <http://www.python.org/download/releases/3.3.4/>`_ が公開されました。このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html>`_ で確認できます。
+
+    OS X 10.9 Mavericksで対話コンソールでクラッシュする問題なども含め、多くの修正が行われています。
+
