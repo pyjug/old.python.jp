@@ -9,7 +9,23 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 
 
 
-.. _555910d567b0e4a41009cb637622a1b84312ad15:
+.. _bb568f3465aab09ba218ab89f041c02ac36f696b:
+
+
+Python 3.3.4 リリース
+================================================================
+
+*2014-02-11 13:30*
+
+Python 3.4 最初のプレビューリリース `Python 3.3.4 <http://www.python.org/download/releases/3.3.4/>`_ がリリースされました。
+
+このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-4>`_ を参照してください。Python 3.3を OS X 10.9 Mavericks で使用するとクラッシュするケースが報告されていましたが、このリリースで対処されています。
+
+
+
+
+
+.. _986f23fd23c1aedb19c16776d0b5c13a5e331eb4:
 
 
 Python 3.4 rc1 リリース
