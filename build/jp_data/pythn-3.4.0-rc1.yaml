@@ -1,0 +1,7 @@
+type: news
+title: Python 3.4 rc1 リリース
+date: 2014-02-11 22:00:00
+text: |
+  Python 3.4 最初のプレビューリリース `Python 3.4 rc1 <http://www.python.org/download/releases/3.4.0/>`_ がリリースされました。
+
+  `現在のスケジュール <http://www.python.org/dev/peps/pep-0429/#release-schedule>`_ では、Python 3.4 正式版は3月11日のリリース予定となっています。
