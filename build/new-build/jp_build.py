@@ -54,7 +54,6 @@ def read_yaml(f):
             if not isinstance(v, datetime):
                 if v:
                     v = dateutil.parser.parse(v)
-
         if isinstance(v, datetime):
             v = v.replace(tzinfo=JST()).astimezone(UTC())
         ret[k] = v
@@ -94,7 +93,12 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 '''
     all = []
     for d in data:
-        s = temp % (d['hash'], d['title'], d['date'].strftime('%Y-%m-%d %H:%M'), d['text'], )
+#        print d['title']
+#        print d['date'].strftime('%Y-%m-%d %H:%M') 
+
+        s = temp % (d['hash'], d['title'], 
+                d['date'].astimezone(JST()).strftime('%Y-%m-%d %H:%M'), 
+                d['text'])
         all.append(s)
 
     return header + u'\n'.join(all)

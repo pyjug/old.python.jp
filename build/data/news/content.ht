@@ -15,9 +15,9 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 Python 3.3.4 リリース
 ================================================================
 
-*2014-02-11 13:30*
+*2014-02-11 22:30*
 
-Python 3.4 最初のプレビューリリース `Python 3.3.4 <http://www.python.org/download/releases/3.3.4/>`_ がリリースされました。
+Python 3.3系のBug fixリリース `Python 3.3.4 <http://www.python.org/download/releases/3.3.4/>`_ がリリースされました。
 
 このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-4>`_ を参照してください。Python 3.3を OS X 10.9 Mavericks で使用するとクラッシュするケースが報告されていましたが、このリリースで対処されています。
 
@@ -31,7 +31,7 @@ Python 3.4 最初のプレビューリリース `Python 3.3.4 <http://www.python
 Python 3.4 rc1 リリース
 ================================================================
 
-*2014-02-11 13:00*
+*2014-02-11 22:00*
 
 Python 3.4 最初のプレビューリリース `Python 3.4 rc1 <http://www.python.org/download/releases/3.4.0/>`_ がリリースされました。
 
@@ -47,7 +47,7 @@ Python 3.4 最初のプレビューリリース `Python 3.4 rc1 <http://www.pyth
 Python 3.4 beta3 リリース
 ================================================================
 
-*2014-01-27 08:30*
+*2014-01-27 17:30*
 
 Python 3.4 の3番目のベータリリース `Python 3.4.0 beta 3 <http://www.python.org/download/releases/3.4.0/>`_ が公開されました。今後、2回のリリース候補を経て、`3月に正式版が公開される予定 <http://www.python.org/dev/peps/pep-0429/>`_ になっています。
 
@@ -61,7 +61,7 @@ Python 3.4 の3番目のベータリリース `Python 3.4.0 beta 3 <http://www.p
 Python 3.3.4 rc1 リリース
 ================================================================
 
-*2014-01-27 08:00*
+*2014-01-27 17:00*
 
 Python 3.3.4 のリリース候補 `Python 3.3.4rc1 <http://www.python.org/download/releases/3.3.4/>`_ が公開されました。このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html>`_ で確認できます。
 
@@ -77,7 +77,7 @@ OS X 10.9 Mavericksで対話コンソールでクラッシュする問題など�
 docutilsの日本語翻訳
 ================================================================
 
-*2014-01-26 12:00*
+*2014-01-26 21:00*
 
 `@shkumagai <https://twitter.com/shkumagai>`_ さんによる docutils の翻訳が、http://docutils.sphinx-users.jp で読めるようになりました。
 
@@ -93,7 +93,7 @@ docutilsの日本語翻訳
 Python Package Index(PyPI) サーバ環境が増強
 ================================================================
 
-*2014-01-26 04:00*
+*2014-01-26 13:00*
 
 `Python Package Index(PyPI) <https://pypi.python.org/pypi>`_ のサーバ環境が刷新され、より安定した動作を提供できるようになりました。
 
@@ -113,7 +113,7 @@ Python Package Index(PyPI) サーバ環境が増強
 Python 3.4 beta2 リリース
 ================================================================
 
-*2014-01-06 02:00*
+*2014-01-06 11:00*
 
 Python 3.4最後のベータリリースとなる、`Python 3.4 beta2がリリース <http://www.python.org/download/releases/3.4.0/>`_ されました。 
 現在のスケジュールでは、今後 rc1/rc2 の公開を経て、2月23日に正式版が公開される予定になっています。
@@ -128,7 +128,7 @@ Python 3.4最後のベータリリースとなる、`Python 3.4 beta2がリリ�
 Python 2.7.4 / 3.2.4 / 3.3.1 リリース
 ================================================================
 
-*2013-04-07 03:00*
+*2013-04-07 12:00*
 
 3つのメジャーバージョン Python 2.7、Python 3.2、 Python 3.3 のバグフィックスリリースである、 `Python 2.7.4 <http://www.python.org/download/releases/2.7.4/>`__ 、 `Python 3.2.4 <http://www.python.org/download/releases/3.2.4/>`__、 `Python 3.3.1 <http://www.python.org/download/releases/3.3.1/>`__ がリリースされました。
 
@@ -154,7 +154,7 @@ Python 2.7.4 / 3.2.4 / 3.3.1 リリース
 Python 3.3 リリース
 ================================================================
 
-*2012-09-29 09:00*
+*2012-09-29 18:00*
 
 Python 3.3.0 が `リリース <http://python.org/download/releases/3.3.0/>`__ されました。
 
