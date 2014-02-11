@@ -1,3 +1,4 @@
 *.pyc
 *.cache
 /build/out
+Thumbs.db
