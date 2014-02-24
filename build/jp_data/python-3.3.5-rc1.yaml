@@ -1,0 +1,5 @@
+type: news
+title: Python 3.3.5 rc1 リリース
+date: 2014-02-24 23:00:00
+text: |
+    先日リリースされた Python 3.3.4に、`Zipファイルのインポートがエラーとなる <http://bugs.python.org/issue20621>`_ ケースが発見されたため、急遽 `Python 3.3.5 rc1 <http://www.python.org/download/releases/3.3.5/>`_ がリリースされました。Python 3.3.5正式版は、一週間のテスト期間後にリリースされる予定です。
