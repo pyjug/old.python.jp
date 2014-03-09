@@ -21,7 +21,7 @@ Python 3.3系のBug fixリリース `Python 3.3.5 <http://www.python.org/downloa
 
 Python3.3.4で発生した、Windows環境でのZipファイルのインポート、及びエンコーディング指定の不具合が修正されています。
 
-詳しい修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-5>`_ を参照してください。
+詳しい修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-5>`__ を参照してください。
 
 
 
@@ -95,7 +95,7 @@ Python 3.3.4 リリース
 
 Python 3.3系のBug fixリリース `Python 3.3.4 <http://www.python.org/download/releases/3.3.4/>`_ がリリースされました。
 
-このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-4>`_ を参照してください。Python 3.3を OS X 10.9 Mavericks で使用するとクラッシュするケースが報告されていましたが、このリリースで対処されています。
+このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-4>`__ を参照してください。Python 3.3を OS X 10.9 Mavericks で使用するとクラッシュするケースが報告されていましたが、このリリースで対処されています。
 
 
 
@@ -139,7 +139,7 @@ Python 3.3.4 rc1 リリース
 
 *2014-01-27 17:00*
 
-Python 3.3.4 のリリース候補 `Python 3.3.4rc1 <http://www.python.org/download/releases/3.3.4/>`_ が公開されました。このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html>`_ で確認できます。
+Python 3.3.4 のリリース候補 `Python 3.3.4rc1 <http://www.python.org/download/releases/3.3.4/>`_ が公開されました。このリリースでの修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html>`__ で確認できます。
 
 OS X 10.9 Mavericksで対話コンソールでクラッシュする問題なども含め、多くの修正が行われています。
 

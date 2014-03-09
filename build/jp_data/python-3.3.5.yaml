@@ -6,5 +6,5 @@ text: |
 
   Python3.3.4で発生した、Windows環境でのZipファイルのインポート、及びエンコーディング指定の不具合が修正されています。
 
-  詳しい修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-5>`_ を参照してください。
+  詳しい修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-5>`__ を参照してください。
 
