@@ -1,0 +1,10 @@
+type: news
+title: Python 3.3.5 リリース
+date: 2014-03-09 21:00:00
+text: |
+  Python 3.3系のBug fixリリース `Python 3.3.5 <http://www.python.org/download/releases/3.3.5/>`_ がリリースされました。
+
+  Python3.3.4で発生した、Windows環境でのZipファイルのインポート、及びエンコーディング指定の不具合が修正されています。
+
+  詳しい修正内容は、`Changelog <http://docs.python.org/3.3/whatsnew/changelog.html#python-3-3-5>`_ を参照してください。
+
