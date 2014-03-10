@@ -1,0 +1,10 @@
+type: news
+title: Python 3.4 rc3 リリース
+date: 2014-03-11 00:30:00
+text: |
+  Python 3.4のリリース候補版、`Python 3.4 rc3が公開 <http://www.python.org/download/releases/3.4.0/>`_ されました。 
+  
+  Python 3.4rc2公開後に発見された、`inspectモジュールの問題 <http://bugs.python.org/issue20786>`__ や、`Windows環境でのensurepipの不具合 <http://bugs.python.org/issue20568>`__ などが修正されています。
+
+  最終リリースの予定は変更されておらず、4.0 正式版の公開予定は、3月16日となっています。
+
