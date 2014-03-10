@@ -9,6 +9,24 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 
 
 
+.. _f6cc760b06418b2208225cbb0adb9304fd08969a:
+
+
+Python 3.4 rc3 リリース
+================================================================
+
+*2014-03-11 00:30*
+
+Python 3.4のリリース候補版、`Python 3.4 rc3が公開 <http://www.python.org/download/releases/3.4.0/>`_ されました。 
+
+Python 3.4rc2公開後に発見された、`inspectモジュールの問題 <http://bugs.python.org/issue20786>`__ や、`Windows環境でのensurepipの不具合 <http://bugs.python.org/issue20568>`__ などが修正されています。
+
+最終リリースの予定は変更されておらず、4.0 正式版の公開予定は、3月16日となっています。
+
+
+
+
+
 .. _877e8472d1cb03eb49825b355aec4257a8b076e8:
 
 
