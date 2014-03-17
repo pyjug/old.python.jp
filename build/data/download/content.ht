@@ -27,27 +27,27 @@ Mac OS X インストーラ
 
 
 
-Python 3.3.5 のダウンロード
+Python 3.4.0 のダウンロード
 -----------------------------
 
 Windows インストーラ
-  * x86版 `python-3.3.5.msi <http://www.python.org/ftp/python/3.3.5/python-3.3.5.msi>`_
+  * x86版 `python-3.4.0.msi <https://www.python.org/ftp/python/3.4.0/python-3.4.0.msi>`_
 
-  * X86-64版 `python-3.3.5.amd64.msi <http://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64.msi>`_
+  * X86-64版 `python-3.4.0.amd64.msi <https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64.msi>`_
 
 Mac OS X インストーラ
-  * x86-64/i386 インストーラ(Mac OS X 10.6 以降) `python-3.3.5-macosx10.6.dmg <http://www.python.org/ftp/python/3.3.5/python-3.3.5-macosx10.6.dmg>`_
+  * x86-64/i386 インストーラ(Mac OS X 10.6 以降) `python-3.4.0-macosx10.6.dmg <https://www.python.org/ftp/python/3.4.0/python-3.4.0-macosx10.6.dmg>`_
 
-  * 32-bit i386/PPC インストーラ(Mac OS X 10.5 以降): `python-3.3.5-macosx10.5.dmg <http://www.python.org/ftp/python/3.3.5/python-3.3.5-macosx10.5.dmg>`_
+  * 32-bit i386/PPC インストーラ(Mac OS X 10.5 以降): `python-3.4.0-macosx10.5.dmg <https://www.python.org/ftp/python/3.4.0/python-3.4.0-macosx10.5.dmg>`_
 
 ソースコード
-  * tar.xz形式 `Python-3.3.5.tar.xz <http://www.python.org/ftp/python/3.3.5/Python-3.3.5.tar.xz>`_
+  * tar.xz形式 `Python-3.4.0.tar.xz <https://www.python.org/ftp/python/3.4.0/Python-3.4.0.tar.xz>`_
 
-  * tar.gz形式 `Python-3.3.5.tgz <http://www.python.org/ftp/python/3.3.5/Python-3.3.5.tgz>`_
+  * tar.gz形式 `Python-3.4.0.tgz <https://www.python.org/ftp/python/3.4.0/Python-3.4.0.tgz>`_
 
 
 その他のリリース
 -------------------
 
-過去のリリースは、 http://www.python.org/download/releases/ よりダウンロードしてください。
+過去のリリースは、 http://www.python.org/download/releases/ よりダウンロードできます。
 
