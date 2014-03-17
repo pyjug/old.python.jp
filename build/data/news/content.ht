@@ -9,6 +9,31 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 
 
 
+.. _7e333f389b6b12e257fe047f0d585febbc0ddbe3:
+
+
+Python 3.4 リリース
+================================================================
+
+*2014-03-17 23:30*
+
+Python 3.4 正式版がリリースされました。
+
+    http://www.python.org/download/releases/3.4.0/
+
+Python 3.4ではPython言語の文法は変更されていませんが、標準ライブラリを中心に多くの機能追加が行われています。以下のモジュールが、新規に追加されました
+
+- `pathlib <http://docs.python.org/3/library/pathlib.html>`__
+- `enum <http://docs.python.org/3/library/enum.html>`__
+- `statistics <http://docs.python.org/3/library/statistics.html>`__
+- `ensurepip <http://docs.python.org/3/library/ensurepip.html>`__
+- `tracemalloc <http://docs.python.org/3/library/tracemalloc.html>`__
+- `asyncio <http://docs.python.org/3/library/asyncio.html>`__
+
+
+
+
+
 .. _f6cc760b06418b2208225cbb0adb9304fd08969a:
 
 
