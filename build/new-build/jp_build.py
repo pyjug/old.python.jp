@@ -40,7 +40,7 @@ class JST(tzinfo):
 def read_yaml(f):
     d = yaml.load(open(f).read())
     d['filename'] = os.path.split(f)[1]
-    d['hash'] = sha.sha(d['filename']).hexdigest()
+    d['hash'] = 'n'+sha.sha(d['filename']).hexdigest()
     if d['type'] == 'news':
         path = '/news/#'
     else:
