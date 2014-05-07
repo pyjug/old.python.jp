@@ -9,6 +9,22 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 
 
 
+.. _n26aa16417931f2fc24c910908fa59390e84baada:
+
+
+Python 3.4.1 rc1 リリース
+================================================================
+
+*2014-05-07 13:00*
+
+Python 3.4.1 のリリース候補 `Python 3.4.1 rc1 <https://www.python.org/download/releases/3.4.1>`_ が公開されました。このリリースでの修正内容は、`Changelog <http://docs.python.org/3.4/whatsnew/changelog.html>`__ で確認できます。
+
+このリリースのWindows版インストーラでは、`HeartBleed <http://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%BC%E3%83%88%E3%83%96%E3%83%AA%E3%83%BC%E3%83%89>`__ 問題に対処済みのOpenSSLライブラリは、インストールされます。
+
+
+
+
+
 .. _n7e333f389b6b12e257fe047f0d585febbc0ddbe3:
 
 
