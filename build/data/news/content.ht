@@ -9,13 +9,29 @@ Python関連のニュース・告知がありましたら `サイト運営まで
 
 
 
+.. _na62e432aeeca34356015835146a5f6228142d472:
+
+
+Python 2.7.7 rc1 リリース
+================================================================
+
+*2014-05-21 14:00*
+
+Python 2.7.7 のリリース候補 `Python 2.7.7rc1 <https://www.python.org/download/releases/2.7.7/>`_ が公開されました。このリリースでの修正内容は、`Misc/Newsファイル <http://hg.python.org/cpython/raw-file/e32e3a9f3902/Misc/NEWS>`_ で確認できます。
+
+このリリースでは、セキュリティホールとなる可能性がある、潜在的な問題を2件修正しています。一つは `jsonモジュール <http://docs.python.jp/2/library/json.html>`_ の `JSONDecoder` による不正なメモリアクセスで、もう一件は `stringモジュール <http://docs.python.jp/2/library/string.html>`_ から呼び出される、`strop` モジュールの不具合です。
+
+
+
+
+
 .. _n53ebe2f04719988c8041f765d542d5562a7d6451:
 
 
 Python 3.4.1 リリース
 ================================================================
 
-*2014-05-31 13:00*
+*2014-05-21 13:00*
 
 `Python 3.4.1 <https://www.python.org/download/releases/3.4.1>`_ が公開されました。このリリースでの修正内容は、`Changelog <http://docs.python.org/3.4/whatsnew/changelog.html>`__ で確認できます。
 
