@@ -1,3 +1,8 @@
+
+このリポジトリは、現在は使用していません。
+現状のpython.jpサイトは、https://github.com/pyjug/pelican.python.jp を利用しています。
+
+
 This is the python.org website.  Content is located in the 'build/data'
 directory.  To build, use the Makefile or equivalent commands in the
 'build' directory.  For details, see build/README.
